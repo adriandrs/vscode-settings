@@ -133,7 +133,21 @@
   "editor.fontWeight": "400",
   "window.zoomLevel": 0,
   "editor.multiCursorModifier": "alt",
-  "window.density.editorTabHeight": "default",
+  "window.density.editorTabHeight": "compact",
+
+  // Custom CSS settings for specific themes
+  "workbench.colorCustomizations": {
+    "[Violaceous (rainglow)]": {
+      "editorGutter.background": "#242038",
+      "titleBar.activeBackground": "#242038",
+      "titleBar.activeForeground": "#ffffff",
+      "terminal.background": "#242038"
+    },
+    "[mono-cl]": {
+      "editorLineNumber.foreground": "#4b4b4b"
+    },
+    "window.titleBarStyle": ""
+  },
 
   // Auto-save settings
   "files.autoSave": "afterDelay",
@@ -162,7 +176,7 @@
   "editor.folding": true,
   "editor.foldingStrategy": "auto",
   "workbench.preferredLightColorTheme": "GitHub Light",
-  "workbench.preferredDarkColorTheme": "mono-cl",
+  "workbench.preferredDarkColorTheme": "Violaceous (rainglow)",
   "tailwind-fold.unfoldIfLineSelected": false,
   "explorer.fileNesting.enabled": true,
   "explorer.fileNesting.expand": false,
@@ -191,6 +205,6 @@
   "[typescriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "workbench.activityBar.location": "hidden",
-  "workbench.statusBar.visible": false
+  "workbench.statusBar.visible": false,
+  "workbench.activityBar.location": "hidden"
 }
