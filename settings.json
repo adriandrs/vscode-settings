@@ -1,0 +1,196 @@
+// General editor settings
+{
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+
+  // Window and margin settings
+  "window.newWindowDimensions": "inherit",
+  "editor.lineNumbers": "on",
+  //hide breakpoint margin
+  "editor.fontFamily": "Cascadia Code, Consolas, 'Courier New', monospace",
+  "editor.fontLigatures": true,
+  "editor.fontSize": 12.5,
+  "editor.formatOnSave": true,
+  "editor.hideCursorInOverviewRuler": true,
+  "editor.inlineSuggest.enabled": true,
+  "editor.lightbulb.enabled": "off",
+  "editor.linkedEditing": true,
+  "editor.minimap.maxColumn": 80,
+  "editor.minimap.renderCharacters": false,
+  "editor.occurrencesHighlight": "off",
+
+  // GitHub Copilot settings
+  "github.copilot.enable": {
+    "*": true,
+    "plaintext": false,
+    "markdown": false,
+    "scminput": false,
+    "java": false,
+    "yaml": false,
+    "javascript": false,
+    "typescriptreact": true
+  },
+
+  // Terminal settings
+  "terminal.integrated.defaultLocation": "view",
+  "terminal.integrated.defaultProfile.windows": "PowerShell",
+  "terminal.integrated.fontFamily": "FiraCode Nerd Font, Consolas, 'Courier New', monospace",
+  "terminal.integrated.fontSize": 12,
+  "terminal.integrated.lineHeight": 1.1,
+  "terminal.integrated.fontWeight": "500",
+  "terminal.integrated.gpuAcceleration": "on",
+  "terminal.integrated.cursorStyle": "block",
+  "terminal.integrated.tabs.enabled": true,
+  "terminal.integrated.tabs.location": "right",
+  "terminal.integrated.profiles.windows": {
+    "Command Prompt": {
+      "args": [],
+      "icon": "terminal-powershell",
+      "path": [
+        "${env:windir}\\Sysnative\\powershell",
+        "${env:windir}\\System32\\powershell.exe"
+      ]
+    },
+    "Git Bash": {
+      "source": "Git Bash"
+    },
+    "PowerShell": {
+      "icon": "terminal-powershell",
+      "source": "PowerShell"
+    }
+  },
+
+  // GitLens settings
+  "gitlens.hovers.currentLine.over": "line",
+  "gitlens.hovers.currentLine.enabled": false,
+  "gitlens.blame.line.enabled": false, // was working in previous versions
+  "gitlens.currentLine.enabled": false, // in modern version
+  "gitlens.codeLens.authors.enabled": false,
+  "gitlens.codeLens.recentChange.enabled": false,
+
+  // File explorer settings
+  "symbols.hidesExplorerArrows": false,
+  "explorer.compactFolders": false,
+  "explorer.openEditors.visible": 1,
+
+  // File decorations settings
+  "files.exclude": {
+    "/.classpath": true,
+    "/.factorypath": true,
+    "/.project": true,
+    "/.settings": true
+  },
+  "files.watcherExclude": {
+    "/.git/objects/": true,
+    "/node_modules/": true
+  },
+
+  // Minimap settings
+  "editor.minimap.autohide": true,
+
+  // Indentation guide settings
+  "editor.guides.highlightActiveBracketPair": true,
+  "editor.guides.indentation": false,
+  "indenticator.color.dark": "rgba(255,255,255,0.1)",
+  "indenticator.color.light": "rgba(0,0,0,0.1)",
+  "indenticator.hover.peekBack": 100,
+  "indenticator.hover.peekForward": 100,
+  "indenticator.inner.hover.peekBack": 0,
+  "indenticator.inner.hover.peekForward": 1,
+  "indenticator.showCurrentDepthInStatusBar": false,
+  "indenticator.width": 0.1,
+  "editor.bracketPairColorization.enabled": false,
+  "editor.matchBrackets": "never",
+
+  // Integrated terminal and Git settings
+  "git.autofetch": true,
+  "terminal.integrated.shellIntegration.decorationsEnabled": "never",
+  "terminal.integrated.persistentSessionReviveProcess": "onExitAndWindowClose",
+  "restoreTerminals.keepExistingTerminalsOpen": true,
+  "restoreTerminals.terminals": [],
+
+  // Workbench settings
+  "workbench.iconTheme": null,
+  "workbench.colorTheme": "One Dark Pro",
+  "workbench.panel.defaultLocation": "bottom",
+  "workbench.productIconTheme": "material-product-icons",
+  "workbench.view.alwaysShowHeaderActions": true,
+  "workbench.tree.renderIndentGuides": "none",
+  "workbench.sideBar.location": "right",
+  "workbench.startupEditor": "none",
+  "workbench.layoutControl.type": "both",
+  "workbench.layoutControl.enabled": false,
+  "workbench.editor.enablePreview": true,
+
+  // Font and appearance settings
+  "editor.fontWeight": "400",
+  "window.zoomLevel": 0,
+  "editor.multiCursorModifier": "alt",
+  "window.density.editorTabHeight": "default",
+
+  // Auto-save settings
+  "files.autoSave": "afterDelay",
+  "files.autoSaveDelay": 10000,
+
+  // Diff and SCM settings
+  "diffEditor.hideUnchangedRegions.enabled": true,
+  "scm.diffDecorations": "none",
+  "scm.showIncomingChanges": "always",
+  "scm.showOutgoingChanges": "always",
+
+  // Other settings
+  "breadcrumbs.enabled": false,
+  "editor.overviewRulerBorder": false,
+  "editor.renderWhitespace": "none",
+  "editor.scrollbar.horizontal": "hidden",
+  "editor.scrollbar.vertical": "auto",
+  "editor.suggestSelection": "first",
+  "window.menuBarVisibility": "compact",
+  "terminal.integrated.scrollback": 10000,
+  "editor.scrollbar.verticalScrollbarSize": 0,
+  "editor.showFoldingControls": "mouseover",
+  "editor.glyphMargin": false,
+  //editor top margin
+  "editor.padding.top": 10,
+  "editor.folding": true,
+  "editor.foldingStrategy": "auto",
+  "workbench.preferredLightColorTheme": "GitHub Light",
+  "workbench.preferredDarkColorTheme": "mono-cl",
+  "tailwind-fold.unfoldIfLineSelected": false,
+  "explorer.fileNesting.enabled": true,
+  "explorer.fileNesting.expand": false,
+  "apc.font.family": "JetBrains, Consolas, 'Courier New', monospace",
+  "chat.editor.fontSize": 11,
+  "chat.editor.wordWrap": "on",
+  "window.commandCenter": true,
+
+  "vscode_custom_css.imports": [
+    "file:///c:/Users/adrs1/.vscode/extensions/brandonkirbyson.vscode-animations-2.0.2/dist/updateHandler.js"
+  ],
+
+  "window.autoDetectColorScheme": true,
+  "oneDarkPro.bold": true,
+  "workbench.preferredHighContrastLightColorTheme": "Atom One Light",
+  "oneDarkPro.vivid": true,
+  "gitlens.graph.minimap.enabled": false,
+  "gitlens.graph.minimap.additionalTypes": ["tags"],
+  "gitlens.graph.layout": "editor",
+  "diffEditor.ignoreTrimWhitespace": false,
+  "workbench.reduceMotion": "on",
+  "terminal.integrated.env.windows": {},
+  "github.copilot.editor.enableAutoCompletions": true,
+  "console-ninja.featureSet": "Community",
+  "tailwind-fold.autoFold": false,
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "workbench.activityBar.location": "hidden",
+  "workbench.statusBar.visible": false
+}
