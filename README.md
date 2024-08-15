@@ -1,4 +1,4 @@
-# vscode-settings
+VSCode Minimal Settings
 
 Mono-cl
 
