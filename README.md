@@ -4,7 +4,7 @@ VS Code Minimal Settings
 
 Mono-cl
 
-![image](https://github.com/user-attachments/assets/8e3b2ce3-8c2d-4bc5-824e-ed443b202690)
+![image](https://github.com/user-attachments/assets/0b5d1db6-e65f-4d37-9a04-37e9ce82b720)
 ![Screenshot 2024-08-15 150111](https://github.com/user-attachments/assets/86f47582-ed0b-4ac7-bee4-b3df1b3beec6)
 
 Nord
