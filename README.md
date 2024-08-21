@@ -1,4 +1,6 @@
-VSCode Minimal Settings
+VS Code Minimal Settings
+
+<br/>
 
 Mono-cl
 
@@ -17,10 +19,9 @@ Nord
 
 
 One Dark
+![image](https://github.com/user-attachments/assets/36f6ccf7-de62-4576-8cbe-b61b98c06405)
+![image](https://github.com/user-attachments/assets/8a610c3a-6c4c-4296-bcda-33e2ab04d7f9)
 
-![Screenshot 2024-08-15 151930](https://github.com/user-attachments/assets/a7fd1389-79dc-4cea-bfa2-210fb47e6eb1)
-
-![Screenshot 2024-08-15 152102](https://github.com/user-attachments/assets/86c59d9a-64f8-4a39-acfe-1dca9cec8ba9)
 
 
 Violaceous
