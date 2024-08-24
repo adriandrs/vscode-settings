@@ -2,6 +2,18 @@ VS Code Minimal Settings
 
 <br/>
 
+Setup
+
+<br/>
+
+![image](https://github.com/user-attachments/assets/2032ecb9-77bf-4b90-be77-12c4098c4391)
+
+<br/>
+
+Themes
+
+<br/>
+
 Mono-cl
 
 ![image](https://github.com/user-attachments/assets/0b5d1db6-e65f-4d37-9a04-37e9ce82b720)
