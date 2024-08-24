@@ -9,17 +9,9 @@ Setup
 ![image](https://github.com/user-attachments/assets/2032ecb9-77bf-4b90-be77-12c4098c4391)
 ![image](https://github.com/user-attachments/assets/ee7ced39-a9c1-4098-904a-ed4ce4d97a1d)
 
-
 <br/>
 
 Themes
-
-<br/>
-
-Violaceous
-
-![image](https://github.com/user-attachments/assets/a297ebb7-c69f-4fee-9544-655565868b3f)
-![image](https://github.com/user-attachments/assets/46fe9390-c6cb-4b6e-945e-e462e16af3e8)
 
 <br/>
 
@@ -27,6 +19,11 @@ Mono-cl
 
 ![image](https://github.com/user-attachments/assets/0b5d1db6-e65f-4d37-9a04-37e9ce82b720)
 ![Screenshot 2024-08-15 150111](https://github.com/user-attachments/assets/86f47582-ed0b-4ac7-bee4-b3df1b3beec6)
+
+Violaceous
+
+![image](https://github.com/user-attachments/assets/a297ebb7-c69f-4fee-9544-655565868b3f)
+![image](https://github.com/user-attachments/assets/46fe9390-c6cb-4b6e-945e-e462e16af3e8)
 
 Nord
 
