@@ -7,10 +7,19 @@ Setup
 <br/>
 
 ![image](https://github.com/user-attachments/assets/2032ecb9-77bf-4b90-be77-12c4098c4391)
+![image](https://github.com/user-attachments/assets/ee7ced39-a9c1-4098-904a-ed4ce4d97a1d)
+
 
 <br/>
 
 Themes
+
+<br/>
+
+Violaceous
+
+![image](https://github.com/user-attachments/assets/a297ebb7-c69f-4fee-9544-655565868b3f)
+![image](https://github.com/user-attachments/assets/46fe9390-c6cb-4b6e-945e-e462e16af3e8)
 
 <br/>
 
@@ -28,9 +37,3 @@ One Dark
 
 ![image](https://github.com/user-attachments/assets/29268bfa-001c-47a6-a690-c842f26d969a)
 ![image](https://github.com/user-attachments/assets/8a610c3a-6c4c-4296-bcda-33e2ab04d7f9)
-
-Violaceous
-
-![image](https://github.com/user-attachments/assets/a297ebb7-c69f-4fee-9544-655565868b3f)
-![image](https://github.com/user-attachments/assets/46fe9390-c6cb-4b6e-945e-e462e16af3e8)
-
