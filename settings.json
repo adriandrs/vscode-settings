@@ -10,10 +10,27 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
 
+  "apc.electron": {
+    "titleBarStyle": "hidden",
+    "trafficLightPosition": {
+      "x": 9,
+      "y": 9
+    }
+  },
+
+  //Tittle bar settings
+  "window.commandCenter": false,
+  "window.title": "VS Code",
+  // "window.titleBarStyle": "custom",
+  // "window.title": "${activeEditorShort}${separator}${rootName}",
+  // "window.title": "${rootName}",
+  // "window.title": "${}",
+  // "window.title": " ",
+  // "window.titleSeparator": " | ",
+
   // Window and margin settings
   "window.newWindowDimensions": "inherit",
-  "editor.lineNumbers": "on",
-  //hide breakpoint margin
+  "editor.lineNumbers": "off",
   "editor.fontFamily": "Cascadia Code, Consolas, 'Courier New', monospace",
   "editor.fontLigatures": true,
   "editor.fontSize": 12.5,
@@ -96,7 +113,8 @@
   "editor.minimap.autohide": true,
 
   // Indentation guide settings
-  "editor.guides.highlightActiveBracketPair": true,
+  "indenticator.showIndentGuide": false,
+  "editor.guides.highlightActiveBracketPair": false,
   "editor.guides.indentation": false,
   "indenticator.color.dark": "rgba(255,255,255,0.1)",
   "indenticator.color.light": "rgba(0,0,0,0.1)",
@@ -123,7 +141,6 @@
   "workbench.productIconTheme": "material-product-icons",
   "workbench.view.alwaysShowHeaderActions": true,
   "workbench.tree.renderIndentGuides": "none",
-  "workbench.sideBar.location": "right",
   "workbench.startupEditor": "none",
   "workbench.layoutControl.type": "both",
   "workbench.layoutControl.enabled": false,
@@ -133,19 +150,116 @@
   "editor.fontWeight": "400",
   "window.zoomLevel": 0,
   "editor.multiCursorModifier": "alt",
-  "window.density.editorTabHeight": "compact",
+  "window.density.editorTabHeight": "default",
 
   // Custom CSS settings for specific themes
   "workbench.colorCustomizations": {
+    "list.focusOutline": "#00000000",
+
     "[Violaceous (rainglow)]": {
       "editorGutter.background": "#242038",
       "titleBar.activeBackground": "#242038",
       "titleBar.activeForeground": "#ffffff",
-      "terminal.background": "#242038"
+      "terminal.background": "#242038",
+      "editorGroupHeader.tabsBackground": "#242038",
+      "sideBar.background": "#242038",
+      "sideBar.dropBackground": "#242038",
+      "sideBar.foreground": "#c1b4ff93",
+      "sideBarSectionHeader.foreground": "#ffffff",
+      "sideBarSectionHeader.background": "#242038",
+      "list.activeSelectionBackground": "#2a2642",
+      "list.activeSelectionForeground": "#ffffff",
+      "list.inactiveSelectionBackground": "#2a2642",
+      "list.inactiveSelectionForeground": "#ffffff",
+      "statusBar.background": "#242038",
+      "activityBar.background": "#242038",
+      "tab.activeBackground": "#2a2642",
+      "titleBar.inactiveBackground": "#242038",
+      "panel.background": "#242038",
+      "panel.border": "#00000000"
+    },
+    "[Violaceous Light (rainglow)]": {
+      "titleBar.activeBackground": "#dcd9e9"
     },
     "[mono-cl]": {
-      "editorLineNumber.foreground": "#4b4b4b"
+      "editorLineNumber.foreground": "#4b4b4b",
+      "editor.lineHighlightBackground": "#2a2c2d",
+      "editor.lineHighlightBorder": "#2a2c2d",
+      "tab.activeBackground": "#2a2c2d",
+      "panel.border": "#00000000",
+
+      "terminal.background": "#191919",
+      "terminal.foreground": "#A0A0A0",
+      "terminalCursor.background": "#AA9175",
+      "terminalCursor.foreground": "#AA9175",
+      "terminal.ansiBlack": "#616161",
+      "terminal.ansiBlue": "#4D4D4D",
+      "terminal.ansiBrightBlack": "#474747",
+      "terminal.ansiBrightBlue": "#8C8C8C",
+      "terminal.ansiBrightCyan": "#DCDCDC",
+      "terminal.ansiBrightGreen": "#8C8C8C",
+      "terminal.ansiBrightRed": "#A9A9A9",
+      "terminal.ansiBrightWhite": "#D8D8D8",
+      "terminal.ansiBrightYellow": "#545454",
+      "terminal.ansiCyan": "#C9C9C9",
+      "terminal.ansiGreen": "#666666",
+      "terminal.ansiRed": "#383838",
+      "terminal.ansiWhite": "#A9A9A9",
+      "terminal.ansiYellow": "#4D4D4D",
+      "terminal.selectionBackground": "#4D4D4D"
     },
+    "[Nord Flat]": {
+      "sideBar.foreground": "#d5d5d5d7",
+      "panel.border": "#00000000"
+    },
+    "[Theme Flat]": {
+      "list.inactiveSelectionBackground": "#2c313c",
+      "sideBar.border": "#00000000",
+      "tab.activeBackground": "#2c313c",
+      "titleBar.inactiveBackground": "#282c34",
+      "panel.border": "#00000000"
+    },
+    "[Nord Dark Pro]": {
+      "editorGroupHeader.tabsBackground": "#282c34",
+      "sideBar.background": "#282c34",
+      "list.inactiveSelectionBackground": "#2c313c",
+      "statusBar.background": "#282c34",
+      "titleBar.inactiveBackground": "#282c34",
+      "panel.border": "#00000000"
+    },
+    "[Blueberry dark theme]": {
+      "editor.lineHighlightBackground": "#2c313c",
+      "sideBar.background": "#242938",
+      "editor.background": "#242938",
+      "editorGroupHeader.tabsBackground": "#242938",
+      "list.inactiveSelectionBackground": "#2c313c",
+      "list.activeSelectionBackground": "#2c313c",
+      "list.activeSelectionForeground": "#ffffff",
+      "list.hoverBackground": "#2c313c",
+      "statusBar.background": "#242938",
+      "activityBar.background": "#242938",
+      "sideBarSectionHeader.background": "#242938",
+      "sideBarSectionHeader.foreground": "#ffffff",
+      "editorGutter.background": "#242938",
+      "editorGroupHeader.tabsBorder": "#242938",
+      "titleBar.activeBackground": "#242938",
+      "titleBar.inactiveBackground": "#242938"
+    },
+    "[Serendipity Sunset]": {
+      "titleBar.activeBackground": "#232038",
+      "titleBar.inactiveBackground": "#232038",
+      "terminal.background": "#232038",
+      "panel.background": "#232038",
+      "editor.background": "#232038",
+      "sideBar.background": "#232038",
+      "activityBar.background": "#232038",
+      "menu.background": "#232038"
+    },
+    "[Tokyo Night Storm]": {
+      "sideBar.background": "#1f2335",
+      "editor.background": "#1f2335"
+    },
+
     "window.titleBarStyle": ""
   },
 
@@ -166,24 +280,22 @@
   "editor.scrollbar.horizontal": "hidden",
   "editor.scrollbar.vertical": "auto",
   "editor.suggestSelection": "first",
-  "window.menuBarVisibility": "compact",
   "terminal.integrated.scrollback": 10000,
   "editor.scrollbar.verticalScrollbarSize": 0,
   "editor.showFoldingControls": "mouseover",
   "editor.glyphMargin": false,
-  //editor top margin
-  "editor.padding.top": 10,
+  "editor.padding.top": 5,
   "editor.folding": true,
   "editor.foldingStrategy": "auto",
   "workbench.preferredLightColorTheme": "GitHub Light",
-  "workbench.preferredDarkColorTheme": "Violaceous (rainglow)",
+  "workbench.preferredDarkColorTheme": "mono-cl",
   "tailwind-fold.unfoldIfLineSelected": false,
   "explorer.fileNesting.enabled": true,
   "explorer.fileNesting.expand": false,
-  "apc.font.family": "JetBrains, Consolas, 'Courier New', monospace",
+  "apc.font.family": "Dank Mono, Consolas, 'Courier New', monospace",
   "chat.editor.fontSize": 11,
   "chat.editor.wordWrap": "on",
-  "window.commandCenter": true,
+  "editor.renderLineHighlight": "none",
 
   "vscode_custom_css.imports": [
     "file:///c:/Users/adrs1/.vscode/extensions/brandonkirbyson.vscode-animations-2.0.2/dist/updateHandler.js"
@@ -205,6 +317,8 @@
   "[typescriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
+  "window.menuBarVisibility": "compact",
+  "workbench.sideBar.location": "right",
   "workbench.statusBar.visible": false,
   "workbench.activityBar.location": "hidden"
 }
