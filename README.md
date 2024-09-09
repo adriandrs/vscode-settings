@@ -20,24 +20,20 @@ Themes
 Tokyo Night Storm
 
 ![image](https://github.com/user-attachments/assets/d3adb43e-ab95-4175-bfd9-43d4ee36b21b)
-![image](https://github.com/user-attachments/assets/3d04ff0a-bfaf-4df4-b86a-7c716a0d2a27)
 
 <br/>
 
 Mono-cl
 
 ![image](https://github.com/user-attachments/assets/0b5d1db6-e65f-4d37-9a04-37e9ce82b720)
-![Screenshot 2024-08-15 150111](https://github.com/user-attachments/assets/86f47582-ed0b-4ac7-bee4-b3df1b3beec6)
 
 Violaceous
 
 ![image](https://github.com/user-attachments/assets/a297ebb7-c69f-4fee-9544-655565868b3f)
-![image](https://github.com/user-attachments/assets/46fe9390-c6cb-4b6e-945e-e462e16af3e8)
 
 Nord
 
 ![image](https://github.com/user-attachments/assets/8b4602bd-41a7-4057-82fb-b7477ac366da)
-![Screenshot 2024-08-15 150200](https://github.com/user-attachments/assets/b6cc16dd-647d-4332-981d-4bf3a6be71ba)
 
 One Dark
 
