@@ -38,4 +38,3 @@ Nord
 One Dark
 
 ![image](https://github.com/user-attachments/assets/29268bfa-001c-47a6-a690-c842f26d969a)
-![image](https://github.com/user-attachments/assets/8a610c3a-6c4c-4296-bcda-33e2ab04d7f9)
