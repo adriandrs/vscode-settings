@@ -6,12 +6,21 @@ Setup
 
 <br/>
 
+![image](https://github.com/user-attachments/assets/be6b45fc-4d92-4d91-b950-d3732c45e59b)
 ![image](https://github.com/user-attachments/assets/2032ecb9-77bf-4b90-be77-12c4098c4391)
 ![image](https://github.com/user-attachments/assets/ee7ced39-a9c1-4098-904a-ed4ce4d97a1d)
+
 
 <br/>
 
 Themes
+
+<br/>
+
+Tokyo Night Storm
+
+![image](https://github.com/user-attachments/assets/d3adb43e-ab95-4175-bfd9-43d4ee36b21b)
+![image](https://github.com/user-attachments/assets/3d04ff0a-bfaf-4df4-b86a-7c716a0d2a27)
 
 <br/>
 
