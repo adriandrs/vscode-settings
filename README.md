@@ -1,5 +1,7 @@
 VS Code Minimal Settings
 
+The clock is a modular clock from Jaxcore (https://github.com/Jax-Core/JaxCore) and its needed to install rainmeter (https://github.com/rainmeter/rainmeter) 
+
 <br/>
 
 Setup
