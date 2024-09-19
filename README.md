@@ -4,14 +4,14 @@ The clock is a modular clock from Jaxcore (https://github.com/Jax-Core/JaxCore) 
 
 <br/>
 
-Setup
+Screenshots
 
 <br/>
 
 ![image](https://github.com/user-attachments/assets/be6b45fc-4d92-4d91-b950-d3732c45e59b)
+![image](https://github.com/user-attachments/assets/046ab0db-bfb4-4744-85ae-2876ff65184e)
 ![image](https://github.com/user-attachments/assets/2032ecb9-77bf-4b90-be77-12c4098c4391)
 ![image](https://github.com/user-attachments/assets/ee7ced39-a9c1-4098-904a-ed4ce4d97a1d)
-
 
 <br/>
 
