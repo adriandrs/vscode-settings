@@ -30,18 +30,30 @@
   // "window.title": "${folder}",
   // "window.titleBarStyle": "custom",
   // "window.title": "${activeEditorShort}${separator}${rootName}",
-  "window.title": "${rootName}",
+  // "window.title": "${rootName}",
   // "window.title": "${}",
-  // "window.title": " ",
+  "window.title": " ",
   // "window.titleSeparator": " | ",
 
   // Window and margin settings
   "window.newWindowDimensions": "inherit",
   "editor.lineNumbers": "off",
+  "terminal.integrated.fontFamily": "CaskaydiaCove Nerd Font, Consolas, 'Courier New', monospace",
+  // "editor.fontFamily": "Liga SFMono Nerd Font Light, Consolas, 'Courier New', monospace",
   "editor.fontFamily": "Cascadia Code, Consolas, 'Courier New', monospace",
+  "apc.font.family": "Cascadia Code, Consolas, 'Courier New', monospace",
+  "apc.header": {
+    "height": 32,
+    "fontSize": 11
+  },
+  // "editor.fontFamily": "Cascadia Mono, Consolas, 'Courier New', monospace",
   // "editor.fontFamily": "Dank Mono, Consolas, 'Courier New', monospace",
+  // "editor.fontFamily": "SF Mono Light, Consolas, 'Courier New', monospace",
+  // "editor.fontFamily": "CaskaydiaCove Nerd Font, Consolas, 'Courier New', monospace",
+  // "editor.fontFamily": "DejaVu Sans Mono, Consolas, 'Courier New', monospace",
+  // "editor.fontFamily": "Monaspace Krypton, Consolas, 'Courier New', monospace",
   "editor.lineHeight": 1.8,
-  // "editor.letterSpacing": 0.5,
+  // "editor.letterSpacing": 0.3,
   // "editor.tabSize": 2,
   // "editor.wordWrap": "on",
   // "editor.wordWrapColumn": 80,
@@ -50,7 +62,7 @@
   // "editor.cursorBlinking": "solid",
   // "editor.cursorSmoothCaretAnimation": "on",
   "editor.fontLigatures": true,
-  "editor.fontSize": 12.4,
+  "editor.fontSize": 12,
   "editor.fontWeight": "370",
   "editor.formatOnSave": true,
   "editor.hideCursorInOverviewRuler": true,
@@ -64,7 +76,7 @@
 
   // GitHub Copilot settings
   "github.copilot.enable": {
-    "*": false,
+    "*": true,
     "plaintext": false,
     "markdown": false,
     "scminput": false,
@@ -77,10 +89,9 @@
   // Terminal settings
   "terminal.integrated.defaultLocation": "view",
   "terminal.integrated.defaultProfile.windows": "PowerShell",
-  "terminal.integrated.fontFamily": "CaskaydiaCove Nerd Font, Consolas, 'Courier New', monospace",
-  "terminal.integrated.fontSize": 12,
-  "terminal.integrated.lineHeight": 1.3,
-  "terminal.integrated.fontWeight": "380",
+  "terminal.integrated.fontSize": 11,
+  "terminal.integrated.lineHeight": 1.2,
+  "terminal.integrated.fontWeight": "370",
   "terminal.integrated.gpuAcceleration": "on",
   "terminal.integrated.cursorStyle": "block",
   "terminal.integrated.tabs.enabled": true,
@@ -132,7 +143,7 @@
   "editor.minimap.autohide": true,
 
   // Indentation guide settings
-  "indenticator.showIndentGuide": true,
+  "indenticator.showIndentGuide": false,
   "editor.guides.highlightActiveBracketPair": false,
   "editor.guides.indentation": false,
   "indenticator.color.dark": "rgba(255,255,255,0.1)",
@@ -156,16 +167,13 @@
   "workbench.tree.renderIndentGuides": "none",
   "workbench.startupEditor": "none",
   "workbench.layoutControl.type": "both",
-  "workbench.layoutControl.enabled": false,
   "workbench.editor.enablePreview": true,
   "window.zoomLevel": 0,
   "editor.multiCursorModifier": "alt",
-  "window.density.editorTabHeight": "default",
 
   // Custom CSS settings for specific themes
   "workbench.colorCustomizations": {
     "list.focusOutline": "#00000000",
-
     "[Violaceous (rainglow)]": {
       "editorGutter.background": "#242038",
       "titleBar.activeBackground": "#242038",
@@ -197,28 +205,6 @@
       "editor.lineHighlightBorder": "#2a2c2d",
       "tab.activeBackground": "#2a2c2d",
       "sideBar.border": "#353535",
-      // "panel.border": "#00000000",
-
-      // "terminal.background": "#191919",
-      // "terminal.foreground": "#A0A0A0",
-      // "terminalCursor.background": "#AA9175",
-      // "terminalCursor.foreground": "#AA9175",
-      // "terminal.ansiBlack": "#616161",
-      // "terminal.ansiBlue": "#4D4D4D",
-      // "terminal.ansiBrightBlack": "#474747",
-      // "terminal.ansiBrightBlue": "#8C8C8C",
-      // "terminal.ansiBrightCyan": "#DCDCDC",
-      // "terminal.ansiBrightGreen": "#8C8C8C",
-      // "terminal.ansiBrightRed": "#A9A9A9",
-      // "terminal.ansiBrightWhite": "#D8D8D8",
-      // "terminal.ansiBrightYellow": "#545454",
-      // "terminal.ansiCyan": "#C9C9C9",
-      // "terminal.ansiGreen": "#666666",
-      // "terminal.ansiRed": "#383838",
-      // "terminal.ansiWhite": "#A9A9A9",
-      // "terminal.ansiYellow": "#4D4D4D",
-      // "terminal.selectionBackground": "#4D4D4D"
-
       "terminal.background": "#191919",
       "terminal.foreground": "#A0A0A0",
       "terminalCursor.background": "#AA9175",
@@ -251,14 +237,23 @@
       "panel.border": "#00000000"
     },
     "[Nord Dark Pro]": {
+      "activityBar.background": "#21252b",
       "editorGroupHeader.tabsBackground": "#282c34",
-      "sideBar.background": "#282c34",
+      "sideBar.background": "#21252b",
       "list.inactiveSelectionBackground": "#2c313c",
       "statusBar.background": "#282c34",
       "titleBar.inactiveBackground": "#282c34",
-      "panel.border": "#00000000"
+      "tab.activeBorder": "#8FBCBB",
+      "sideBar.foreground": "#d5d5d5a9",
+      "tab.inactiveBackground": "#282c34",
+      "tab.activeBackground": "#333843",
+      "terminal.background": "#21252b",
+      "panel.background": "#21252b",
+      "panel.border": "#00000000",
+      "terminal.border": "#00000000"
     },
     "[Nord Dark Pro Darker]": {
+      "terminal.border": "#00000000",
       "editorGroupHeader.tabsBackground": "#1e2228",
       "sideBar.background": "#1e2228",
       "list.inactiveSelectionBackground": "#2c313c",
@@ -272,7 +267,6 @@
       "panel.border": "#00000000",
       "editorGutter.background": "#1e2228",
       "editorGroupHeader.tabsBorder": "#1e2228",
-      //sidebar foreground
       "sideBar.foreground": "#d5d5d5a9",
       "terminal.background": "#1e2228"
     },
@@ -305,16 +299,24 @@
       "menu.background": "#232038"
     },
     "[Tokyo Night Storm]": {
-      // "sideBar.background": "#1f2335",
+      "tab.activeBorderTop": "#00000000",
+      "tab.activeBorder": "#00000000",
+      "tab.hoverBorder": "#00000000",
+      "editorGroup.border": "#00000000",
+      "editorGroupHeader.tabsBorder": "#00000000",
+      "tab.border": "#00000000",
+      "tab.unfocusedHoverBackground": "#ffffff",
       "editor.background": "#1f2335",
-      //title bar foreground color inactivity
+      "tab.activeBackground": "#30334b",
+      "list.hoverBackground": "#30334b5f",
+      "tab.hoverBackground": "#292c41",
       "titleBar.inactiveForeground": "#626b8b",
       "titleBar.activeForeground": "#838cad",
-      // deeper background colors
       "terminal.background": "#1b1f2f",
       "panel.background": "#1b1f2f",
       "statusBar.background": "#1b1f2f",
       "sideBar.background": "#1b1f2f",
+      "sideBar.foreground": "#6a7195",
       "activityBar.background": "#1b1f2f"
     },
     "[One Darker Pro]": {
@@ -324,39 +326,47 @@
       "sideBar.foreground": "#d5d5d5b2",
       "terminal.border": "#00000000",
       "panel.border": "#00000000",
-      // line cursor color
-      "editorCursor.foreground": "#d5d5d5"
+      "editorCursor.foreground": "#d5d5d5",
+      "tab.activeBackground": "#262930",
+      "tab.border": "#00000000"
     },
     "[IntelliJ Neo Dark]": {},
+    "[One Dark Pro]": {
+      "sideBar.background": "#282c34",
+      "editorGroupHeader.tabsBackground": "#282c34",
+      "tab.inactiveBackground": "#282c34",
+      "tab.activeBackground": "#343841",
+      "tab.border": "#00000000",
+      "sideBar.foreground": "#d5d5d5a7",
+      "terminal.border": "#00000000",
+      "sideBar.border": "#ffffff1d",
+      "tab.activeBorder": "#00000000",
+      "tab.hoverBackground": "#343841a7",
+      "titleBar.inactiveBackground": "#282c34"
+    },
     "[One Dark Pro Darker]": {
       "editorGroupHeader.tabsBackground": "#23272e",
       "tab.inactiveBackground": "#23272e",
       "tab.activeBackground": "#2d3139",
+      "tab.activeBorderTop": "#00000000",
+      "tab.activeBorder": "#00000000",
+      "tab.border": "#00000000",
       "list.inactiveSelectionBackground": "#2c313c",
       "statusBar.background": "#23272e",
       "titleBar.activeBackground": "#23272e",
-      // "titleBar.inactiveBackground": "#1e2227",
       "terminal.background": "#23272e",
       "panel.background": "#23272e",
       "terminal.border": "#00000000",
       "panel.border": "#84848429",
       "sideBar.background": "#23272e",
-      // "panel.border": "#00000000",
       "sideBar.border": "#84848429",
-      "sideBar.foreground": "#d5d5d585",
+      "sideBar.foreground": "#d5d5d579",
       "editor.selectionBackground": "#3e4451de",
       "editor.lineHighlightBackground": "#2c313c",
       "editorCursor.foreground": "#d5d5d5"
-      // "sideBar.background": "#23272e",
-      // "activityBar.background": "#23272e",
-      // "sideBarSectionHeader.background": "#23272e",
-      // "sideBarSectionHeader.foreground": "#ffffff",
-      // "editorGutter.background": "#23272e",
-      // "editorGroupHeader.tabsBorder": "#23272e"
     },
     "[PurpleSchool Theme]": {
       "editorGroupHeader.tabsBorder": "#1e2228",
-      //active tab background color
       "tab.activeBackground": "#2c1d4dca",
       "tab.activeBorderTop": "#00000000",
       "activityBar.activeBackground": "#00000000"
@@ -366,41 +376,109 @@
       "editorGroupHeader.tabsBackground": "#e6e7ed",
       "tab.inactiveBackground": "#e6e7ed",
       "titleBar.inactiveBackground": "#e6e7ed",
-      "tab.activeBackground": "#f5f5f5",
-      "tab.border": "#e6e7ed",
-      "tab.hoverBackground": "#f5f5f5",
+      "tab.activeBackground": "#d6d8dfc8",
+      "tab.border": "#e6e7ed00",
+      "tab.hoverBackground": "#d6d8df83",
       "panel.border": "#00000000",
+      "editorGroup.border": "#00000000",
+      "editorGroupHeader.tabsBorder": "#00000000",
+      "tab.hoverBorder": "#00000000",
+      "tab.activeBorder": "#00000000",
+      "titleBar.border": "#00000000",
       "window.activeBorder": "#00000000"
     },
     "[1Dark RainCoat Light]": {
-      // terminal settings colors for 1Dark RainCoat Light
       "terminal.background": "#e1e4eb",
       "terminal.foreground": "#000000",
       "panel.background": "#e1e4eb",
-      //title bar color
       "titleBar.activeBackground": "#e1e4eb",
-      //group header tabs border none
       "editorGroupHeader.tabsBorder": "#00000000",
       "tab.border": "#00000000",
       "tab.hoverBorder": "#00000000",
-      //title bar border none
       "titleBar.inactiveBackground": "#e1e4eb",
-      //bottom bar color
       "statusBar.background": "#e1e4eb"
-
-      // //eva light theme terminal colors
-      // "terminal.background": "#e1e4eb",
-      // "terminal.foreground": "#000000"
     },
-
+    "[Sequoia Monochrome]": {
+      "editor.background": "#1a1b26"
+    },
+    "[Nord Flat Italic]": {
+      "sideBar.foreground": "#a4a4a4",
+      "editor.background": "#282c34",
+      "editorGroupHeader.tabsBackground": "#282c34",
+      "list.inactiveSelectionBackground": "#2c313c",
+      "statusBar.background": "#282c34",
+      "titleBar.activeBackground": "#282c34",
+      "activityBar.background": "#282c34",
+      "sideBar.background": "#282c34",
+      "panel.background": "#282c34",
+      "editorGutter.background": "#282c34",
+      "tab.activeBackground": "#333843",
+      "tab.inactiveBackground": "#282c34",
+      "tab.unfocusedHoverBackground": "#333843",
+      "tab.inactiveForeground": "#d5d5d5af"
+    },
+    "[Eva Light]": {
+      "editorGroupHeader.tabsBackground": "#ebeef5",
+      "tab.inactiveBackground": "#ebeef5",
+      "tab.activeBackground": "#e1e4eb",
+      "tab.hoverBackground": "#e1e4eb",
+      "editorGroup.border": "#00000000",
+      "editorGroupHeader.tabsBorder": "#00000000",
+      "tab.border": "#00000000",
+      "tab.unfocusedHoverBackground": "#e1e4eb",
+      "panel.background": "#e1e4eb",
+      "activityBar.background": "#e1e4eb",
+      "activityBar.activeBackground": "#e1e4eb",
+      "terminal.background": "#e1e4eb",
+      "terminal.border": "#00000000"
+    },
+    "[Rosé Pine (no italics)]": {
+      "terminal.background": "#191724",
+      "panel.background": "#191724",
+      "tab.activeBorder": "#676196"
+    },
+    "[Rosé Pine Moon (no italics)]": {
+      "sideBar.background": "#1f1d30",
+      "sideBar.foreground": "#747090",
+      "terminal.background": "#1f1d30",
+      "panel.background": "#1f1d30",
+      "tab.activeBorder": "#676196"
+    },
+    "[One Dark Pro Flat]": {
+      "sideBar.foreground": "#d5d5d588",
+      "terminal.border": "#ffffff00",
+      "sideBar.border": "#62626265",
+      "tab.activeBorder": "#00000000",
+      "tab.activeBackground": "#333844",
+      "tab.border": "#00000000"
+    },
+    "[One Dark Pro Mix]": {
+      "panel.background": "#21252b",
+      "terminal.background": "#21252b",
+      "terminal.border": "#00000000",
+      "sideBar.foreground": "#d5d5d57a",
+      "tab.activeBorderTop": "#00000000",
+      "tab.activeBorder": "#ffffff00",
+      "panel.border": "#00000000",
+      "editorGroupHeader.tabsBackground": "#282c34",
+      "tab.activeBackground": "#333844",
+      "tab.inactiveBackground": "#282c34",
+      "tab.border": "#00000000",
+      "titleBar.activeBackground": "#282c34",
+      "titleBar.inactiveBackground": "#282c34"
+    },
+    "tab.border": "#00000000",
+    "titleBar.border": "#00000000",
+    "terminal.border": "#00000000",
+    "editorGroupHeader.border": "#ffffff00",
+    "scrollbar.shadow": "#ffffff00",
+    "widget.shadow": "#ffffff00",
     "editor.foldBackground": "#00000000",
-    //hide collapsed lines of code background line color
-
     "window.titleBarStyle": "",
     "sideBarTitle.foreground": "#00000000",
     "sideBarTitle.background": "#00000000",
-    "sideBar.border": "#00000000"
-    //hide title bar icons in sidebar
+    "sideBar.border": "#00000000",
+    "terminal.background": "#00000000"
   },
 
   // Auto-save settings
@@ -409,9 +487,8 @@
 
   // Diff and SCM settings
   "diffEditor.hideUnchangedRegions.enabled": true,
-  "scm.diffDecorations": "none",
-  "scm.showIncomingChanges": "always",
-  "scm.showOutgoingChanges": "always",
+  "scm.showIncomingChanges": "auto",
+  "scm.showOutgoingChanges": "auto",
 
   // Other settings
   // "workbench.tree.indent": 5,
@@ -434,8 +511,7 @@
   "editor.padding.top": 10,
   "editor.folding": true,
   "editor.foldingStrategy": "auto",
-  "workbench.preferredLightColorTheme": "GitHub Light",
-  "workbench.preferredDarkColorTheme": "Tokyo Night Storm",
+  "workbench.preferredLightColorTheme": "Tokyo Night Storm",
   "tailwind-fold.unfoldIfLineSelected": false,
   "explorer.fileNesting.enabled": true,
   "explorer.fileNesting.expand": false,
@@ -460,11 +536,10 @@
   "[typescriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "window.menuBarVisibility": "toggle",
-  "editor.matchBrackets": "never",
-  "oneDarkPro.bold": true,
-  "oneDarkPro.vivid": true,
-  "workbench.iconTheme": "symbols",
+  "window.menuBarVisibility": "compact",
+  "editor.matchBrackets": false,
+  "oneDarkPro.bold": false,
+  "oneDarkPro.vivid": false,
   "workbench.tree.enableStickyScroll": false,
   "editor.stickyScroll.scrollWithEditor": false,
   "editor.stickyScroll.enabled": false,
@@ -476,11 +551,15 @@
     "height": -20,
     "fontSize": -10
   },
+  "apc.stylesheet": {
+    // ".explorer-folders-view": "zoom: 1.0;"
+  },
 
-  "apc.font.family": "Cascadia Code Mono, Consolas, 'Courier New', monospace",
+  // "apc.monospace.font.family": "Cascadia Code, Consolas, 'Courier New', monospace",
   "apc.listRow": {
-    "height": 23,
-    "fontSize": 12.4
+    // "lists": ["explorer-folders-view"],
+    "height": 20.5,
+    "fontSize": 12
   },
   "telemetry.telemetryLevel": "off",
   "workbench.editor.tabSizing": "shrink",
@@ -490,19 +569,17 @@
   "update.mode": "default",
   "apc.menubar.compact": true,
 
-  "editor.cursorBlinking": "smooth",
+  "editor.cursorBlinking": "blink",
   "editor.cursorSmoothCaretAnimation": "off",
-  "workbench.sideBar.location": "right",
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "supermaven.otherWarning": false,
   "supermaven.enable": {
-    "*": true
+    "*": false
   },
-  "workbench.activityBar.location": "hidden",
   "explorer.fileNesting.patterns": {
-    "//": "Last update at 19/9/2024, 2:29:14",
+    "//": "Last update at 22/9/2024, 17:48:31",
     ".clang-tidy": ".clang-format, .clangd, compile_commands.json",
     ".env": "*.env, .env.*, .envrc, env.d.ts",
     ".gitignore": ".gitattributes, .gitmodules, .gitmessage, .mailmap, .git-blame*",
@@ -591,5 +668,53 @@
     "*.w": "$(capture).*.w, I$(capture).w",
     "*.xaml": "$(capture).xaml.cs"
   },
-  "workbench.statusBar.visible": false
+  "workbench.layoutControl.enabled": false,
+  "workbench.sideBar.location": "right",
+  "workbench.editor.labelFormat": "short",
+  "gitlens.views.repositories.showIncomingActivity": true,
+  "gitlens.views.workspaces.showIncomingActivity": true,
+  "settings.cycle": [
+    {
+      "id": "lineNumbers",
+      "values": [
+        {
+          "editor.lineNumbers": "off",
+          "editor.folding": true
+        },
+        {
+          "editor.lineNumbers": "on",
+          "editor.folding": true
+        }
+      ]
+    },
+    {
+      "id": "indentation",
+      "values": [
+        {
+          "indenticator.showIndentGuide": false
+        },
+        {
+          "indenticator.showIndentGuide": true
+        }
+      ]
+    }
+  ],
+  "background.style": {
+    "background-position": "100% 100%",
+    "background-size": "auto",
+    "opacity": 0
+  },
+  "workbench.tips.enabled": false,
+  "git.mergeEditor": true,
+  "workbench.statusBar.visible": false,
+  "workbench.iconTheme": "symbols",
+  "errorLens.fontWeight": "300",
+  "workbench.preferredDarkColorTheme": "Tokyo Night Storm",
+  "git.alwaysShowStagedChangesResourceGroup": true,
+  "workbench.settings.applyToAllProfiles": ["workbench.colorCustomizations"],
+  "scm.providerCountBadge": "auto",
+  "scm.alwaysShowActions": true,
+  "scm.alwaysShowRepositories": true,
+  "scm.diffDecorations": "none",
+  "workbench.activityBar.location": "hidden"
 }
