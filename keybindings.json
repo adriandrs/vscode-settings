@@ -20,7 +20,7 @@
     "args": {
       "to": "up",
       "by": "line",
-      "value": 10
+      "value": 3
     },
     "when": "editorTextFocus"
   },
@@ -30,7 +30,7 @@
     "args": {
       "to": "down",
       "by": "line",
-      "value": 10
+      "value": 3
     },
     "when": "editorTextFocus"
   },
@@ -44,7 +44,7 @@
   },
   {
     "command": "openInTerminal",
-    "key": "ctrl+'"
+    "key": "ctrl+shift+'"
   },
   {
     "command": "workbench.action.openGlobalKeybindings",
@@ -56,7 +56,7 @@
   },
   {
     "command": "revealFileInOS",
-    "key": "ctrl+;"
+    "key": "ctrl+shift+;"
   },
   {
     "command": "-revealFileInOS",
@@ -224,11 +224,11 @@
     "key": "ctrl+shift+z",
     "command": "editor.emmet.action.balanceOut"
   },
-  {
-    "key": "ctrl+l",
-    "command": "-expandLineSelection",
-    "when": "textInputFocus"
-  },
+  // {
+  //   "key": "ctrl+l",
+  //   "command": "-expandLineSelection",
+  //   "when": "textInputFocus"
+  // },
   {
     "key": "ctrl+shift+x",
     "command": "editor.emmet.action.balanceIn"
@@ -258,18 +258,14 @@
     "when": "chatIsEnabled"
   },
   {
-    "key": "ctrl+shift+i",
-    "command": "workbench.panel.chatSidebar"
-  },
-  {
     "key": "ctrl+shift+x",
     "command": "-workbench.view.extensions",
     "when": "viewContainer.workbench.view.extensions.enabled"
   },
-  {
-    "key": "ctrl+l",
-    "command": "expandLineSelection"
-  },
+  // {
+  //   "key": "ctrl+l",
+  //   "command": "expandLineSelection"
+  // },
   {
     "key": "ctrl+shift+\\",
     "command": "workbench.action.toggleAuxiliaryBar"
@@ -356,10 +352,6 @@
     "when": "terminalFocus && terminalHasBeenCreated || terminalFocus && terminalProcessSupported || terminalHasBeenCreated && terminalTabsFocus || terminalProcessSupported && terminalTabsFocus"
   },
   {
-    "key": "ctrl+shift+capslock",
-    "command": "workbench.files.action.focusFilesExplorer"
-  },
-  {
     "key": "ctrl+capslock",
     "command": "workbench.action.focusActiveEditorGroup"
   },
@@ -368,7 +360,104 @@
     "command": "workbench.files.action.collapseExplorerFolders"
   },
   {
-    "key": "ctrl+shift+i",
+    "key": "ctrl+f1",
+    "command": "workbench.action.selectIconTheme"
+  },
+  {
+    "key": "ctrl+shift+f1",
+    "command": "workbench.action.selectProductIconTheme"
+  },
+  {
+    "key": "ctrl+capslock ctrl+z",
+    "command": "workbench.action.toggleZenMode"
+  },
+  {
+    "key": "ctrl+shift+j",
     "command": "workbench.action.chat.openInSidebar"
+  },
+  {
+    "key": "ctrl+i",
+    "command": "workbench.action.openQuickChat"
+  },
+  {
+    "key": "ctrl+shift+k",
+    "command": "workbench.action.openGlobalKeybindingsFile"
+  },
+  {
+    "key": "ctrl+'",
+    "command": "workbench.files.action.focusFilesExplorer"
+  },
+  {
+    "key": "ctrl+;",
+    "command": "workbench.action.focusActiveEditorGroup"
+  },
+  {
+    "key": "ctrl+shift+pageup",
+    "command": "-workbench.action.moveEditorLeftInGroup"
+  },
+  {
+    "key": "ctrl+end",
+    "command": "views.moveViewUp",
+    "when": "focusedView != ''"
+  },
+  {
+    "key": "ctrl+k up",
+    "command": "-views.moveViewUp",
+    "when": "focusedView != ''"
+  },
+  {
+    "key": "ctrl+shift+l",
+    "command": "settings.cycle.lineNumbers",
+    "when": "editorFocus"
+  },
+  {
+    "key": "ctrl+shift+o",
+    "command": "settings.cycle.indentation",
+    "when": "editorFocus"
+  },
+  {
+    "key": "ctrl+enter",
+    "command": "editor.action.insertLineAfter",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "ctrl+enter",
+    "command": "-editor.action.insertLineAfter",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "ctrl+l",
+    "command": "-expandLineSelection",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "ctrl+l",
+    "command": "workbench.action.chat.newChat",
+    "when": "chatIsEnabled && inChat"
+  },
+  {
+    "key": "ctrl+l",
+    "command": "-workbench.action.chat.newChat",
+    "when": "chatIsEnabled && inChat"
+  },
+  {
+    "key": "ctrl+l",
+    "command": "-notebook.centerActiveCell",
+    "when": "notebookEditorFocused"
+  },
+  {
+    "key": "ctrl+l",
+    "command": "inlineChat.start",
+    "when": "editorFocus && inlineChatHasProvider && !editorReadonly"
+  },
+  {
+    "key": "ctrl+i",
+    "command": "-inlineChat.start",
+    "when": "editorFocus && inlineChatHasProvider && !editorReadonly"
+  },
+  {
+    "key": "ctrl+k i",
+    "command": "-inlineChat.start",
+    "when": "editorFocus && inlineChatHasProvider && !editorReadonly"
   }
 ]
