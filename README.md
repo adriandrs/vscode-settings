@@ -10,7 +10,7 @@ Screenshots
 
 ![image](https://github.com/user-attachments/assets/046ab0db-bfb4-4744-85ae-2876ff65184e)
 ![image](https://github.com/user-attachments/assets/2032ecb9-77bf-4b90-be77-12c4098c4391)
-![image](https://github.com/user-attachments/assets/2a74737a-9ff5-4c84-a0af-cb1acdb1a833)
+![image](https://github.com/user-attachments/assets/e82e231c-3392-4edd-aff8-de9c60c88aa1)
 
 <br/>
 
