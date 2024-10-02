@@ -1,3 +1,5 @@
+
+Nord
         {
             "background": "#181A1F",
             "black": "#4E5666",
@@ -21,3 +23,54 @@
             "white": "#ABB2BF",
             "yellow": "#D18E54"
         },
+
+Tokyo Night Storm
+        {
+            "background": "#1F2335",
+            "black": "#414868",
+            "blue": "#7AA2F7",
+            "brightBlack": "#6E7AB0",
+            "brightBlue": "#7AA2F7",
+            "brightCyan": "#7DCFFF",
+            "brightGreen": "#73DACA",
+            "brightPurple": "#BB9AF7",
+            "brightRed": "#F7768E",
+            "brightWhite": "#8C93B3",
+            "brightYellow": "#E0AF68",
+            "cursorColor": "#C0CAF5",
+            "cyan": "#7DCFFF",
+            "foreground": "#A9B1DC",
+            "green": "#73DACA",
+            "name": "Tokyo Night Storm",
+            "purple": "#BB9AF7",
+            "red": "#F7768E",
+            "selectionBackground": "#28344A",
+            "white": "#A9B1DC",
+            "yellow": "#E0AF68"
+        },
+
+Black
+        {
+            "background": "#191919",
+            "black": "#616161",
+            "blue": "#ABABAB",
+            "brightBlack": "#878787",
+            "brightBlue": "#8C8C8C",
+            "brightCyan": "#DCDCDC",
+            "brightGreen": "#8C8C8C",
+            "brightPurple": "#A3A3A3",
+            "brightRed": "#A9A9A9",
+            "brightWhite": "#FFFFFF",
+            "brightYellow": "#D4D4D4",
+            "cursorColor": "#AA9175",
+            "cyan": "#C9C9C9",
+            "foreground": "#A0A0A0",
+            "green": "#666666",
+            "name": "N0tch2k",
+            "purple": "#B0B0B0",
+            "red": "#666666",
+            "selectionBackground": "#4D4D4D",
+            "white": "#FFFFFF",
+            "yellow": "#A3A3A3"
+        },
+
