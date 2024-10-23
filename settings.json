@@ -1,4 +1,5 @@
 // General editor settings
+
 {
   "[css]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
@@ -41,18 +42,18 @@
   "terminal.integrated.fontFamily": "CaskaydiaCove Nerd Font, Consolas, 'Courier New', monospace",
   // "editor.fontFamily": "Liga SFMono Nerd Font Light, Consolas, 'Courier New', monospace",
   "editor.fontFamily": "Cascadia Code, Consolas, 'Courier New', monospace",
-  "apc.font.family": "Cascadia Code, Consolas, 'Courier New', monospace",
-  "apc.header": {
-    "height": 32,
-    "fontSize": 11
-  },
   // "editor.fontFamily": "Cascadia Mono, Consolas, 'Courier New', monospace",
   // "editor.fontFamily": "Dank Mono, Consolas, 'Courier New', monospace",
   // "editor.fontFamily": "SF Mono Light, Consolas, 'Courier New', monospace",
   // "editor.fontFamily": "CaskaydiaCove Nerd Font, Consolas, 'Courier New', monospace",
   // "editor.fontFamily": "DejaVu Sans Mono, Consolas, 'Courier New', monospace",
   // "editor.fontFamily": "Monaspace Krypton, Consolas, 'Courier New', monospace",
-  "editor.lineHeight": 1.8,
+  "apc.font.family": "Cascadia Code, Consolas, 'Courier New', monospace",
+  "apc.header": {
+    "height": 32,
+    "fontSize": 11
+  },
+  "editor.lineHeight": 1.9,
   // "editor.letterSpacing": 0.3,
   // "editor.tabSize": 2,
   // "editor.wordWrap": "on",
@@ -62,7 +63,8 @@
   // "editor.cursorBlinking": "solid",
   // "editor.cursorSmoothCaretAnimation": "on",
   "editor.fontLigatures": true,
-  "editor.fontSize": 12,
+  // "editor.fontSize": 11.3,
+  "editor.fontSize": 11.6,
   "editor.fontWeight": "370",
   "editor.formatOnSave": true,
   "editor.hideCursorInOverviewRuler": true,
@@ -73,6 +75,8 @@
   "editor.occurrencesHighlight": "off",
   "editor.parameterHints.enabled": false,
   "editor.selectionHighlight": false,
+
+  // font size workbench
 
   // GitHub Copilot settings
   "github.copilot.enable": {
@@ -89,9 +93,9 @@
   // Terminal settings
   "terminal.integrated.defaultLocation": "view",
   "terminal.integrated.defaultProfile.windows": "PowerShell",
-  "terminal.integrated.fontSize": 11,
+  "terminal.integrated.fontSize": 11.5,
   "terminal.integrated.lineHeight": 1.2,
-  "terminal.integrated.fontWeight": "370",
+  "terminal.integrated.fontWeight": "380",
   "terminal.integrated.gpuAcceleration": "on",
   "terminal.integrated.cursorStyle": "block",
   "terminal.integrated.tabs.enabled": true,
@@ -160,7 +164,7 @@
   // Integrated terminal and Git settings
   "git.autofetch": true,
   "terminal.integrated.shellIntegration.decorationsEnabled": "never",
-  "workbench.colorTheme": "One Dark Pro",
+  "workbench.colorTheme": "Codemos Modern (Dark)",
   "workbench.panel.defaultLocation": "bottom",
   "workbench.productIconTheme": "material-product-icons",
   "workbench.view.alwaysShowHeaderActions": true,
@@ -243,10 +247,10 @@
       "list.inactiveSelectionBackground": "#2c313c",
       "statusBar.background": "#282c34",
       "titleBar.inactiveBackground": "#282c34",
-      "tab.activeBorder": "#8FBCBB",
+      "tab.activeBorderTop": "#8FBCBB",
       "sideBar.foreground": "#d5d5d5a9",
       "tab.inactiveBackground": "#282c34",
-      "tab.activeBackground": "#333843",
+      "tab.activeBackground": "#00000000",
       "terminal.background": "#21252b",
       "panel.background": "#21252b",
       "panel.border": "#00000000",
@@ -298,8 +302,15 @@
       "activityBar.background": "#232038",
       "menu.background": "#232038"
     },
+    "[Tokyo Night]": {
+      "tab.activeBorderTop": "#3d59a1",
+      "tab.border": "#00000000",
+      "tab.activeBorder": "#00000000"
+    },
     "[Tokyo Night Storm]": {
-      "tab.activeBorderTop": "#00000000",
+      "scrollbarSlider.hoverBackground": "#61759d7d",
+      "scrollbarSlider.activeBackground": "#61759d7d",
+      "tab.activeBorderTop": "#838cad",
       "tab.activeBorder": "#00000000",
       "tab.hoverBorder": "#00000000",
       "editorGroup.border": "#00000000",
@@ -307,7 +318,7 @@
       "tab.border": "#00000000",
       "tab.unfocusedHoverBackground": "#ffffff",
       "editor.background": "#1f2335",
-      "tab.activeBackground": "#30334b",
+      "tab.activeBackground": "#00000000",
       "list.hoverBackground": "#30334b5f",
       "tab.hoverBackground": "#292c41",
       "titleBar.inactiveForeground": "#626b8b",
@@ -323,11 +334,14 @@
       "sideBar.foreground": "#d5d5d5ad"
     },
     "[One Dark Darker]": {
-      "sideBar.foreground": "#d5d5d5b2",
+      "tab.activeBorderTop": "#828C9E",
+      "scrollbarSlider.hoverBackground": "#676d7997",
+      "tab.hoverBackground": "#2c313c9b",
+      "sideBar.foreground": "#6a737d",
+      "editorGutter.foldingControlForeground": "#6a737d",
       "terminal.border": "#00000000",
       "panel.border": "#00000000",
       "editorCursor.foreground": "#d5d5d5",
-      "tab.activeBackground": "#262930",
       "tab.border": "#00000000"
     },
     "[IntelliJ Neo Dark]": {},
@@ -335,12 +349,15 @@
       "sideBar.background": "#282c34",
       "editorGroupHeader.tabsBackground": "#282c34",
       "tab.inactiveBackground": "#282c34",
-      "tab.activeBackground": "#343841",
+      "tab.activeBackground": "#00000000",
       "tab.border": "#00000000",
       "sideBar.foreground": "#d5d5d5a7",
+      "statusBar.background": "#282c34",
+      "panel.border": "#00000000",
       "terminal.border": "#00000000",
-      "sideBar.border": "#ffffff1d",
+      "sideBar.border": "#00000000",
       "tab.activeBorder": "#00000000",
+      "tab.activeBorderTop": "#ffffff7a",
       "tab.hoverBackground": "#343841a7",
       "titleBar.inactiveBackground": "#282c34"
     },
@@ -376,7 +393,8 @@
       "editorGroupHeader.tabsBackground": "#e6e7ed",
       "tab.inactiveBackground": "#e6e7ed",
       "titleBar.inactiveBackground": "#e6e7ed",
-      "tab.activeBackground": "#d6d8dfc8",
+      "tab.activeBackground": "#00000000",
+      "tab.activeBorderTop": "#838cad",
       "tab.border": "#e6e7ed00",
       "tab.hoverBackground": "#d6d8df83",
       "panel.border": "#00000000",
@@ -420,7 +438,7 @@
     "[Eva Light]": {
       "editorGroupHeader.tabsBackground": "#ebeef5",
       "tab.inactiveBackground": "#ebeef5",
-      "tab.activeBackground": "#e1e4eb",
+      "tab.activeBackground": "#d8e0f3",
       "tab.hoverBackground": "#e1e4eb",
       "editorGroup.border": "#00000000",
       "editorGroupHeader.tabsBorder": "#00000000",
@@ -467,17 +485,30 @@
       "titleBar.activeBackground": "#282c34",
       "titleBar.inactiveBackground": "#282c34"
     },
+    "[GitHub Dark Dimmed]": {
+      "editorGroupHeader.tabsBackground": "#22272e",
+      "editorGroupHeader.tabsBorder": "#00000000",
+      "editorGroup.border": "#00000000",
+      "tab.activeBackground": "#22272e",
+      "tab.inactiveBackground": "#22272e",
+      "editorGroupHeader.border": "#00000000",
+      "tab.border": "#00000000",
+      "tab.hoverBackground": "#323942ac",
+      "tab.activeBorder": "#00000000"
+    },
     "tab.border": "#00000000",
     "titleBar.border": "#00000000",
     "terminal.border": "#00000000",
-    "editorGroupHeader.border": "#ffffff00",
-    "scrollbar.shadow": "#ffffff00",
-    "widget.shadow": "#ffffff00",
+    "editorGroupHeader.border": "#00000000",
+    "scrollbar.shadow": "#00000000",
+    "widget.shadow": "#00000000",
     "editor.foldBackground": "#00000000",
     "window.titleBarStyle": "",
     "sideBarTitle.foreground": "#00000000",
     "sideBarTitle.background": "#00000000",
     "sideBar.border": "#00000000",
+    "editorGroupHeader.tabsBorder": "#00000000",
+    "editorGroup.border": "#00000000",
     "terminal.background": "#00000000"
   },
 
@@ -487,8 +518,8 @@
 
   // Diff and SCM settings
   "diffEditor.hideUnchangedRegions.enabled": true,
-  "scm.showIncomingChanges": "auto",
-  "scm.showOutgoingChanges": "auto",
+  "scm.showIncomingChanges": "true",
+  "scm.showOutgoingChanges": "true",
 
   // Other settings
   // "workbench.tree.indent": 5,
@@ -511,7 +542,6 @@
   "editor.padding.top": 10,
   "editor.folding": true,
   "editor.foldingStrategy": "auto",
-  "workbench.preferredLightColorTheme": "Tokyo Night Storm",
   "tailwind-fold.unfoldIfLineSelected": false,
   "explorer.fileNesting.enabled": true,
   "explorer.fileNesting.expand": false,
@@ -541,8 +571,8 @@
   "oneDarkPro.bold": false,
   "oneDarkPro.vivid": false,
   "workbench.tree.enableStickyScroll": false,
-  "editor.stickyScroll.scrollWithEditor": false,
   "editor.stickyScroll.enabled": false,
+  "editor.stickyScroll.scrollWithEditor": false,
   "[javascriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
@@ -553,18 +583,19 @@
   },
   "apc.stylesheet": {
     // ".explorer-folders-view": "zoom: 1.0;"
+    ".tabs-container": "margin-bottom: 10px;"
   },
 
   // "apc.monospace.font.family": "Cascadia Code, Consolas, 'Courier New', monospace",
   "apc.listRow": {
     // "lists": ["explorer-folders-view"],
-    "height": 20.5,
-    "fontSize": 12
+    "height": 19.5,
+    "fontSize": 11.5
   },
   "telemetry.telemetryLevel": "off",
   "workbench.editor.tabSizing": "shrink",
   "apc.imports": [
-    "file:///c:/Users/adrs1/oneDrive/Documents/VSCode/CustomCSS/vscode-styles.css"
+    // "file:///c:/Users/adrs1/oneDrive/Documents/VSCode/CustomCSS/vscode-styles.css"
   ],
   "update.mode": "default",
   "apc.menubar.compact": true,
@@ -706,15 +737,23 @@
   },
   "workbench.tips.enabled": false,
   "git.mergeEditor": true,
-  "workbench.statusBar.visible": false,
   "workbench.iconTheme": "symbols",
   "errorLens.fontWeight": "300",
-  "workbench.preferredDarkColorTheme": "Tokyo Night Storm",
+  "workbench.preferredDarkColorTheme": "One Dark Darker",
   "git.alwaysShowStagedChangesResourceGroup": true,
   "workbench.settings.applyToAllProfiles": ["workbench.colorCustomizations"],
   "scm.providerCountBadge": "auto",
   "scm.alwaysShowActions": true,
   "scm.alwaysShowRepositories": true,
   "scm.diffDecorations": "none",
+  "codemosModern.dark.auxiliaryUiTheme": null,
+  "codemosModern.dark.design": "modern",
+  "codemosModern.dark.accentColor": "#1c1e23",
+  "codemosModern.dark.adaptiveMode": "moderate",
+  "codemosModern.dark.auxiliaryCodeTheme": null,
+  "window.titleBarStyle": "custom",
+  "vscode_vibrancy.opacity": 0.4,
+  "explorer.autoReveal": false,
+  "workbench.statusBar.visible": false,
   "workbench.activityBar.location": "hidden"
 }
