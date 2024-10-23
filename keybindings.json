@@ -459,5 +459,9 @@
     "key": "ctrl+k i",
     "command": "-inlineChat.start",
     "when": "editorFocus && inlineChatHasProvider && !editorReadonly"
+  },
+  {
+    "key": "alt+1",
+    "command": "-workbench.action.openEditorAtIndex1"
   }
 ]
