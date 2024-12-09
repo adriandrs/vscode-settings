@@ -42,6 +42,7 @@
   "terminal.integrated.fontFamily": "CaskaydiaCove Nerd Font, Consolas, 'Courier New', monospace",
   // "editor.fontFamily": "Liga SFMono Nerd Font Light, Consolas, 'Courier New', monospace",
   "editor.fontFamily": "Cascadia Code, Consolas, 'Courier New', monospace",
+
   // "editor.fontFamily": "Cascadia Mono, Consolas, 'Courier New', monospace",
   // "editor.fontFamily": "Dank Mono, Consolas, 'Courier New', monospace",
   // "editor.fontFamily": "SF Mono Light, Consolas, 'Courier New', monospace",
@@ -508,8 +509,10 @@
     "sideBarTitle.background": "#00000000",
     "sideBar.border": "#00000000",
     "editorGroupHeader.tabsBorder": "#00000000",
-    "editorGroup.border": "#00000000",
-    "terminal.background": "#00000000"
+    "editorGroup.border": "#00000000"
+    // "activityBarTop.foreground": "#00000000",
+    // "activityBarTop.background": "#00000000",
+    // "activityBar.border": "#00000000"
   },
 
   // Auto-save settings
@@ -700,11 +703,21 @@
     "*.xaml": "$(capture).xaml.cs"
   },
   "workbench.layoutControl.enabled": false,
-  "workbench.sideBar.location": "right",
   "workbench.editor.labelFormat": "short",
   "gitlens.views.repositories.showIncomingActivity": true,
   "gitlens.views.workspaces.showIncomingActivity": true,
   "settings.cycle": [
+    {
+      "id": "breadcrumbs",
+      "values": [
+        {
+          "breadcrumbs.enabled": false
+        },
+        {
+          "breadcrumbs.enabled": true
+        }
+      ]
+    },
     {
       "id": "lineNumbers",
       "values": [
@@ -754,6 +767,6 @@
   "window.titleBarStyle": "custom",
   "vscode_vibrancy.opacity": 0.4,
   "explorer.autoReveal": false,
-  "workbench.statusBar.visible": false,
-  "workbench.activityBar.location": "hidden"
+  "git.confirmSync": false,
+  "workbench.statusBar.visible": false
 }
