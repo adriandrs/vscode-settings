@@ -165,7 +165,6 @@
   // Integrated terminal and Git settings
   "git.autofetch": true,
   "terminal.integrated.shellIntegration.decorationsEnabled": "never",
-  "workbench.colorTheme": "Codemos Modern (Dark)",
   "workbench.panel.defaultLocation": "bottom",
   "workbench.productIconTheme": "material-product-icons",
   "workbench.view.alwaysShowHeaderActions": true,
@@ -179,6 +178,59 @@
   // Custom CSS settings for specific themes
   "workbench.colorCustomizations": {
     "list.focusOutline": "#00000000",
+
+    "[Best Themes - Github Dark Dimmed]": {
+      // "editor.background": "#1e1e1e",
+      "editorGroupHeader.tabsBackground": "#1c2128",
+      "titleBar.activeBackground": "#1c2128",
+      "titleBar.inactiveBackground": "#1c2128",
+      "activityBar.background": "#1c2128",
+      "statusBar.background": "#1c2128",
+      "statusBar.border": "#00000000"
+      // "tab.activeBackground": "#1e1e1e",
+      // "tab.inactiveBackground": "#1e1e1e",
+      // "tab.hoverBackground": "#1e1e1e",
+      // "editorGutter.background": "#1e1e1e",
+      // "editorGroupHeader.tabsBorder": "#1e1e1e",
+      // "sideBar.background": "#1e1e1e",
+      // "sideBar.foreground": "#d5d5d5a9",
+      // "statusBar.background": "#1e1e1e",
+      // "activityBar.background": "#1e1e1e",
+      // "titleBar.activeBackground": "#1e1e1e",
+      // "titleBar.inactiveBackground": "#1e1e1e",
+      // "panel.background": "#1e1e1e",
+      // "panel.border": "#00000000",
+      // "terminal.background": "#1e1e1e",
+      // "terminal.foreground": "#d5d5d5",
+      // "terminalCursor.background": "#d5d5d5",
+      // "terminalCursor.foreground": "#d5d5d5"
+    },
+    "[Min Dark]": {
+      "terminal.background": "#1a1a1a",
+      "menu.background": "#1a1a1a",
+      "panel.background": "#1a1a1a",
+      // header background
+      "editorGroupHeader.tabsBackground": "#1a1a1a"
+      // "editor.background": "#1e1e1e",
+      // "editorGroupHeader.tabsBackground": "#1e1e1e",
+      // "tab.activeBackground": "#1e1e1e",
+      // "tab.inactiveBackground": "#1e1e1e",
+      // "tab.hoverBackground": "#1e1e1e",
+      // "editorGutter.background": "#1e1e1e",
+      // "editorGroupHeader.tabsBorder": "#1e1e1e",
+      // "sideBar.background": "#1e1e1e",
+      // "sideBar.foreground": "#d5d5d5a9",
+      // "statusBar.background": "#1e1e1e",
+      // "activityBar.background": "#1e1e1e",
+      // "titleBar.activeBackground": "#1e1e1e",
+      // "titleBar.inactiveBackground": "#1e1e1e",
+      // "panel.background": "#1e1e1e",
+      // "panel.border": "#00000000",
+      // "terminal.background": "#1e1e1e",
+      // "terminal.foreground": "#d5d5d5",
+      // "terminalCursor.background": "#d5d5d5",
+      // "terminalCursor.foreground": "#d5d5d5"
+    },
     "[Violaceous (rainglow)]": {
       "editorGutter.background": "#242038",
       "titleBar.activeBackground": "#242038",
@@ -209,7 +261,7 @@
       "editor.lineHighlightBackground": "#2a2c2d",
       "editor.lineHighlightBorder": "#2a2c2d",
       "tab.activeBackground": "#2a2c2d",
-      "sideBar.border": "#353535",
+      // "sideBar.border": "#353535",
       "terminal.background": "#191919",
       "terminal.foreground": "#A0A0A0",
       "terminalCursor.background": "#AA9175",
@@ -497,9 +549,15 @@
       "tab.hoverBackground": "#323942ac",
       "tab.activeBorder": "#00000000"
     },
+
+    // Gemeral settings
+    "activityBar.border": "#00000000",
     "tab.border": "#00000000",
-    "titleBar.border": "#00000000",
+    "panel.border": "#00000000",
     "terminal.border": "#00000000",
+    "tab.activeBorder": "#00000000",
+    "diffEditor.border": "#00000000",
+    "titleBar.border": "#00000000",
     "editorGroupHeader.border": "#00000000",
     "scrollbar.shadow": "#00000000",
     "widget.shadow": "#00000000",
@@ -509,7 +567,8 @@
     "sideBarTitle.background": "#00000000",
     "sideBar.border": "#00000000",
     "editorGroupHeader.tabsBorder": "#00000000",
-    "editorGroup.border": "#00000000"
+    "editorGroup.border": "#00000000",
+    "focusBorder": "#00000000"
     // "activityBarTop.foreground": "#00000000",
     // "activityBarTop.background": "#00000000",
     // "activityBar.border": "#00000000"
@@ -570,7 +629,7 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "window.menuBarVisibility": "compact",
-  "editor.matchBrackets": false,
+  "editor.matchBrackets": "never",
   "oneDarkPro.bold": false,
   "oneDarkPro.vivid": false,
   "workbench.tree.enableStickyScroll": false,
@@ -752,7 +811,6 @@
   "git.mergeEditor": true,
   "workbench.iconTheme": "symbols",
   "errorLens.fontWeight": "300",
-  "workbench.preferredDarkColorTheme": "One Dark Darker",
   "git.alwaysShowStagedChangesResourceGroup": true,
   "workbench.settings.applyToAllProfiles": ["workbench.colorCustomizations"],
   "scm.providerCountBadge": "auto",
@@ -766,7 +824,11 @@
   "codemosModern.dark.auxiliaryCodeTheme": null,
   "window.titleBarStyle": "custom",
   "vscode_vibrancy.opacity": 0.4,
-  "explorer.autoReveal": false,
+  "explorer.autoReveal": true,
   "git.confirmSync": false,
-  "workbench.statusBar.visible": false
+  "workbench.sideBar.location": "right",
+  "workbench.editor.scrollToSwitchTabs": true,
+  "workbench.preferredDarkColorTheme": "Min Dark",
+  "workbench.statusBar.visible": false,
+  "workbench.activityBar.location": "hidden"
 }
