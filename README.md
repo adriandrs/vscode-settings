@@ -18,7 +18,7 @@ One Dark Darker
 
 Tokyo Night Storm
 
-![Screenshot 2024-08-21 034932](https://github.com/user-attachments/assets/b72d9b48-c2f6-49fa-a8ca-ca6d70bcb8d8)
+![Screenshot 2024-12-18 021009](https://github.com/user-attachments/assets/1fb2fec1-6781-4d95-8034-5bd2384ca07e)
 
 An extra:
 
