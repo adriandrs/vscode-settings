@@ -8,8 +8,13 @@ Screenshots
 
 <br/>
 
+One Dark Darker
 ![image](https://github.com/user-attachments/assets/e82e231c-3392-4edd-aff8-de9c60c88aa1)
+
+Tokyo Night Storm
 ![image](https://github.com/user-attachments/assets/046ab0db-bfb4-4744-85ae-2876ff65184e)
+
+Mono-cl
 ![image](https://github.com/user-attachments/assets/2032ecb9-77bf-4b90-be77-12c4098c4391)
 
 <br/>
