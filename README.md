@@ -6,6 +6,13 @@ The clock is a modular clock from Jaxcore (https://github.com/Jax-Core/JaxCore) 
 
 Screenshots
 
+Modern design with rounded corners
+
+![Screenshot 2025-04-12 073458](https://github.com/user-attachments/assets/853f08a9-25c2-4eba-965e-092ecf1281c9)
+
+![image](https://github.com/user-attachments/assets/afebbbd3-0039-4690-aaeb-90a9a7ead120)
+
+
 <br/>
 
 Min Dark
