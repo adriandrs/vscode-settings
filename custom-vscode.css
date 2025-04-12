@@ -1,3 +1,30 @@
+/* Agregar margen izquierdo al título del sidebar */
+.monaco-workbench .part.sidebar .composite.title h2 {
+    margin-left: 20px !important; /* Ajusta el valor del margen según sea necesario */
+    color: var(--vscode-sideBar-foreground) !important;
+}
+/* Bordes redondeados para el archivo seleccionado en el sidebar */
+.monaco-workbench .part.sidebar .monaco-list .monaco-list-row.selected {
+    border-radius: 5px !important; /* Define el radio de los bordes */
+}
+/* Limitar el ancho de la lista de archivos en el sidebar al 70% */
+.monaco-workbench .part.sidebar .monaco-list {
+    width: 95% !important; /* Limita al 70% del ancho */
+    /* margin: 0 auto !important; Centra la lista horizontalmente */
+}
+/* Title bar a la izquierda */
+/* .monaco-workbench .part.titlebar > .titlebar-container > .titlebar-left {
+    display: none !important;
+} */
+
+/* Color del título */
+.monaco-workbench .part.titlebar {
+    /* color: var(--vscode-editor-foreground) !important; */
+}
+/* Ocultar los íconos de minimizar, maximizar y cerrar */
+.monaco-workbench .part.titlebar > .titlebar-container > .titlebar-right {
+    color: #00000000 !important; /* Cambia el color a transparente */
+}
 
 /* ===== [1] Elimina el blur del fondo general ===== */
 #command-blur {
@@ -84,9 +111,13 @@
 } */
 
 /* Hide the ">" chevron icon */
-.codicon-tree-item-expanded:before {
+/* .codicon-tree-item-expanded:before {
     display: none !important;
+} */
+ .codicon-tree-item-expanded:before {
+    color: var(--vscode-sideBar-foreground) !important;
 }
+
 
 /* List item label name */
 .monaco-list.list_id_1 .monaco-list-row.selected .label-name {
