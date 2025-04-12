@@ -1,5 +1,4 @@
-// General editor settings
-
+// LANGUAGE FORMATTING PREFERENCES
 {
   "[css]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
@@ -10,7 +9,17 @@
   "[jsonc]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
 
+  // WINDOW APPEARANCE AND BEHAVIOR
   "apc.electron": {
     "backgroundColor": "#00000000",
     "frame": false,
@@ -22,51 +31,37 @@
       "y": 14
     }
   },
-
-  //Tittle bar settings
   "window.commandCenter": false,
-  // "window.title": "VS Code",
-  // "window.title": "${rootName}${separator}${activeEditorShort}",
-  // "window.title": "${folderName} ${separator} ${activeEditorShort}",
-  // "window.title": "${folder}",
-  // "window.titleBarStyle": "custom",
-  // "window.title": "${activeEditorShort}${separator}${rootName}",
-  // "window.title": "${rootName}",
-  // "window.title": "${}",
-  "window.title": " ",
-  // "window.titleSeparator": " | ",
-
-  // Window and margin settings
+  "window.title": "${activeEditorShort}${separator}${rootName}",
   "window.newWindowDimensions": "inherit",
-  "editor.lineNumbers": "off",
-  "terminal.integrated.fontFamily": "CaskaydiaCove Nerd Font, Consolas, 'Courier New', monospace",
-  // "editor.fontFamily": "Liga SFMono Nerd Font Light, Consolas, 'Courier New', monospace",
-  "editor.fontFamily": "Cascadia Code, Consolas, 'Courier New', monospace",
+  "window.zoomLevel": 0.05,
+  "window.autoDetectColorScheme": true,
+  "window.menuBarVisibility": "compact",
 
-  // "editor.fontFamily": "Cascadia Mono, Consolas, 'Courier New', monospace",
-  // "editor.fontFamily": "Dank Mono, Consolas, 'Courier New', monospace",
-  // "editor.fontFamily": "SF Mono Light, Consolas, 'Courier New', monospace",
-  // "editor.fontFamily": "CaskaydiaCove Nerd Font, Consolas, 'Courier New', monospace",
-  // "editor.fontFamily": "DejaVu Sans Mono, Consolas, 'Courier New', monospace",
-  // "editor.fontFamily": "Monaspace Krypton, Consolas, 'Courier New', monospace",
-  "apc.font.family": "Cascadia Code, Consolas, 'Courier New', monospace",
-  "apc.header": {
-    "height": 32,
-    "fontSize": 11
+  // FILE SETTINGS
+  "files.associations": {
+    "*.css": "tailwindcss"
   },
-  "editor.lineHeight": 1.9,
-  // "editor.letterSpacing": 0.3,
-  // "editor.tabSize": 2,
-  // "editor.wordWrap": "on",
-  // "editor.wordWrapColumn": 80,
-  // "editor.wrappingIndent": "same",
-  // "editor.wordWrapMinified": true,
-  // "editor.cursorBlinking": "solid",
-  // "editor.cursorSmoothCaretAnimation": "on",
+  "files.autoSave": "afterDelay",
+  "files.autoSaveDelay": 10000,
+  "files.exclude": {
+    "/.classpath": true,
+    "/.factorypath": true,
+    "/.project": true,
+    "/.settings": true
+  },
+  "files.watcherExclude": {
+    "/.git/objects/": true,
+    "/node_modules/": true
+  },
+
+  // EDITOR APPEARANCE AND BEHAVIOR
+  "editor.lineNumbers": "on",
+  "editor.fontFamily": "Cascadia Code, Consolas, 'Courier New', monospace",
+  "editor.lineHeight": 2,
   "editor.fontLigatures": true,
-  // "editor.fontSize": 11.3,
   "editor.fontSize": 11.6,
-  "editor.fontWeight": "370",
+  "editor.fontWeight": "380",
   "editor.formatOnSave": true,
   "editor.hideCursorInOverviewRuler": true,
   "editor.lightbulb.enabled": "off",
@@ -74,24 +69,39 @@
   "editor.minimap.maxColumn": 100,
   "editor.minimap.renderCharacters": false,
   "editor.occurrencesHighlight": "off",
-  "editor.parameterHints.enabled": false,
   "editor.selectionHighlight": false,
+  "editor.minimap.autohide": true,
+  "editor.guides.highlightActiveBracketPair": false,
+  "editor.guides.indentation": false,
+  "editor.bracketPairColorization.enabled": false,
+  "editor.multiCursorModifier": "alt",
+  "editor.accessibilitySupport": "off",
+  "editor.renderControlCharacters": false,
+  "editor.overviewRulerBorder": false,
+  "editor.renderWhitespace": "none",
+  "editor.scrollbar.horizontal": "hidden",
+  "editor.scrollbar.vertical": "auto",
+  "editor.suggestSelection": "first",
+  "editor.scrollbar.verticalScrollbarSize": 0,
+  "editor.showFoldingControls": "mouseover",
+  "editor.glyphMargin": false,
+  "editor.padding.top": 0,
+  "editor.inlayHints.padding": true,
+  "editor.inlayHints.enabled": "on",
+  "editor.inlayHints.fontFamily": "Cascadia Code",
+  "editor.folding": true,
+  "editor.foldingStrategy": "auto",
+  "editor.renderLineHighlight": "none",
+  "editor.cursorBlinking": "smooth",
+  "editor.cursorSmoothCaretAnimation": "on",
+  "editor.matchBrackets": "never",
+  "editor.stickyScroll.enabled": false,
+  "editor.stickyScroll.scrollWithEditor": false,
+  "editor.smoothScrolling": true,
+  "editor.inlineSuggest.syntaxHighlightingEnabled": true,
 
-  // font size workbench
-
-  // GitHub Copilot settings
-  "github.copilot.enable": {
-    "*": true,
-    "plaintext": false,
-    "markdown": false,
-    "scminput": false,
-    "java": false,
-    "yaml": false,
-    "javascript": true,
-    "typescriptreact": true
-  },
-
-  // Terminal settings
+  // TERMINAL CONFIGURATION
+  "terminal.integrated.fontFamily": "CaskaydiaCove Nerd Font, Consolas, 'Courier New', monospace",
   "terminal.integrated.defaultLocation": "view",
   "terminal.integrated.defaultProfile.windows": "PowerShell",
   "terminal.integrated.fontSize": 11.5,
@@ -118,39 +128,38 @@
       "source": "PowerShell"
     }
   },
+  "terminal.integrated.shellIntegration.decorationsEnabled": "never",
+  "terminal.integrated.scrollback": 10000,
+  "terminal.integrated.smoothScrolling": true,
+  "terminal.integrated.hideOnStartup": "always",
+  "terminal.integrated.suggest.enabled": true,
+  "terminal.integrated.env.windows": {},
 
-  // GitLens settings
+  // GITLENS CONFIGURATION
   "gitlens.hovers.currentLine.over": "line",
   "gitlens.hovers.currentLine.enabled": false,
-  "gitlens.blame.line.enabled": false, // was working in previous versions
-  "gitlens.currentLine.enabled": false, // in modern version
+  "gitlens.blame.line.enabled": false,
+  "gitlens.currentLine.enabled": false,
   "gitlens.codeLens.authors.enabled": false,
   "gitlens.codeLens.recentChange.enabled": false,
+  "gitlens.graph.minimap.enabled": false,
+  "gitlens.graph.minimap.additionalTypes": ["tags"],
+  "gitlens.graph.layout": "editor",
+  "gitlens.views.repositories.showIncomingActivity": true,
+  "gitlens.views.workspaces.showIncomingActivity": true,
 
-  // File explorer settings
+  // FILE EXPLORER SETTINGS
   "symbols.hidesExplorerArrows": false,
   "explorer.compactFolders": false,
   "explorer.openEditors.visible": 1,
+  "explorer.decorations.colors": false,
+  "explorer.decorations.badges": true,
+  "explorer.fileNesting.enabled": true,
+  "explorer.fileNesting.expand": false,
+  "explorer.autoReveal": true,
 
-  // File decorations settings
-  "files.exclude": {
-    "/.classpath": true,
-    "/.factorypath": true,
-    "/.project": true,
-    "/.settings": true
-  },
-  "files.watcherExclude": {
-    "/.git/objects/": true,
-    "/node_modules/": true
-  },
-
-  // Minimap settings
-  "editor.minimap.autohide": true,
-
-  // Indentation guide settings
+  // INDENTATION SETTINGS
   "indenticator.showIndentGuide": false,
-  "editor.guides.highlightActiveBracketPair": false,
-  "editor.guides.indentation": false,
   "indenticator.color.dark": "rgba(255,255,255,0.1)",
   "indenticator.color.light": "rgba(0,0,0,0.1)",
   "indenticator.hover.peekBack": 100,
@@ -159,12 +168,15 @@
   "indenticator.inner.hover.peekForward": 1,
   "indenticator.showCurrentDepthInStatusBar": false,
   "indenticator.width": 0.1,
-  "editor.bracketPairColorization.enabled": false,
-  // "editor.matchBrackets": "near",
 
-  // Integrated terminal and Git settings
+  // GIT SETTINGS
+  "git.decorations.enabled": true,
   "git.autofetch": true,
-  "terminal.integrated.shellIntegration.decorationsEnabled": "never",
+  "git.mergeEditor": true,
+  "git.alwaysShowStagedChangesResourceGroup": true,
+  "git.confirmSync": false,
+
+  // WORKBENCH CONFIGURATION
   "workbench.panel.defaultLocation": "bottom",
   "workbench.productIconTheme": "material-product-icons",
   "workbench.view.alwaysShowHeaderActions": true,
@@ -172,64 +184,326 @@
   "workbench.startupEditor": "none",
   "workbench.layoutControl.type": "both",
   "workbench.editor.enablePreview": true,
-  "window.zoomLevel": 0,
-  "editor.multiCursorModifier": "alt",
+  "workbench.preferredHighContrastLightColorTheme": "Atom One Light",
+  "workbench.reduceMotion": "on",
+  "workbench.editor.empty.hint": "hidden",
+  "workbench.editor.tabSizing": "shrink",
+  "workbench.iconTheme": "symbols",
+  "workbench.settings.applyToAllProfiles": ["workbench.colorCustomizations"],
+  "workbench.layoutControl.enabled": false,
+  "workbench.editor.labelFormat": "short",
+  "workbench.tips.enabled": false,
+  "workbench.list.smoothScrolling": true,
+  "workbench.preferredLightColorTheme": "Tokyo Night Light",
+  "workbench.preferredDarkColorTheme": "Mokka",
+  "workbench.editor.showTabs": "multiple",
+  "workbench.editor.scrollToSwitchTabs": true,
+  "workbench.tree.enableStickyScroll": false,
 
-  // Custom CSS settings for specific themes
+  // BREADCRUMBS SETTINGS
+  "breadcrumbs.enabled": false,
+  "breadcrumbs.icons": false,
+
+  // DIFF AND SCM SETTINGS
+  "diffEditor.hideUnchangedRegions.enabled": true,
+  "diffEditor.ignoreTrimWhitespace": false,
+  "scm.providers.visible": 0,
+  "scm.showIncomingChanges": "true",
+  "scm.showOutgoingChanges": "true",
+  "scm.providerCountBadge": "auto",
+  "scm.alwaysShowActions": true,
+  "scm.alwaysShowRepositories": true,
+  "scm.diffDecorations": "gutter",
+
+  // GITHUB COPILOT SETTINGS
+  "github.copilot.enable": {
+    "*": true,
+    "plaintext": false,
+    "markdown": false,
+    "scminput": false,
+    "java": false,
+    "yaml": false,
+    "javascript": true,
+    "typescriptreact": true
+  },
+  "github.copilot.nextEditSuggestions.enabled": true,
+
+  // TAILWIND SETTINGS
+  "tailwind-fold.unfoldIfLineSelected": false,
+  "tailwind-fold.autoFold": false,
+
+  // CHAT AND MARKDOWN SETTINGS
+  "chat.editor.fontSize": 11,
+  "chat.editor.wordWrap": "on",
+  "chat.setupFromDialog": true,
+  "markdown-preview-enhanced.codeBlockTheme": "auto.css",
+  "markdown-preview-enhanced.previewTheme": "none.css",
+
+  // TYPESCRIPT SETTINGS
+  "typescript.inlayHints.functionLikeReturnTypes.enabled": true,
+  "typescript.inlayHints.enumMemberValues.enabled": true,
+  "typescript.inlayHints.parameterNames.enabled": "all",
+  "typescript.inlayHints.parameterNames.suppressWhenArgumentMatchesName": true,
+  "javascript.inlayHints.parameterTypes.enabled": false,
+
+  // AUTOFOLD IMPORTS SETTINGS
+  "autofoldImports.onStartOrOpen": false,
+  "autofoldImports.onSave": false,
+  "autofoldImports.onEditorChange": false,
+
+  // APC CUSTOMIZATION
+  "apc.font.family": "Cascadia Code, Consolas, 'Courier New', monospace",
+  "apc.header": {
+    "height": 32,
+    "fontSize": 11
+  },
+  "apc.sidebar.titlebar": {
+    "height": -20,
+    "fontSize": -10
+  },
+  "apc.stylesheet": {
+    ".tabs-container": "margin-bottom: 10px;"
+  },
+  "apc.listRow": {
+    "height": 19.5,
+    "fontSize": 11.5
+  },
+  "apc.menubar.compact": true,
+  "apc.imports": [],
+
+  // MISC EXTENSION SETTINGS
+  "telemetry.telemetryLevel": "off",
+  "update.mode": "default",
+  "oneDarkPro.bold": true,
+  "oneDarkPro.vivid": false,
+  "supermaven.otherWarning": false,
+  "supermaven.enable": {
+    "*": false
+  },
+  "codemosModern.dark.auxiliaryUiTheme": null,
+  "codemosModern.dark.design": "modern",
+  "codemosModern.dark.accentColor": "#1c1e23",
+  "codemosModern.dark.adaptiveMode": "moderate",
+  "codemosModern.dark.auxiliaryCodeTheme": null,
+  "vscode_vibrancy.opacity": 0.4,
+  "cSpell.customDictionaries": {},
+  "cSpell.language": "en,es-ES,la",
+  "errorLens.fontWeight": "300",
+  "console-ninja.featureSet": "Community",
+  "background.style": {
+    "background-position": "100% 100%",
+    "background-size": "auto",
+    "opacity": 0
+  },
+  "custom-ui-style.font.sansSerif": "Ubuntu Mono",
+
+  // CUSTOM UI STYLES AND CSS IMPORTS
+  "vscode_custom_css.imports": [
+    "file:///C:/Users/adrs1/OneDrive/Documents/vscode-customization/vscode-script.js",
+    "file:///C:/Users/adrs1/OneDrive/Documents/vscode-customization/custom-vscode.css"
+  ],
+
+  // SETTINGS CYCLE PRESETS
+  "settings.cycle": [
+    {
+      "id": "breadcrumbs",
+      "values": [
+        {
+          "breadcrumbs.enabled": false
+        },
+        {
+          "breadcrumbs.enabled": true
+        }
+      ]
+    },
+    {
+      "id": "lineNumbers",
+      "values": [
+        {
+          "editor.lineNumbers": "off",
+          "editor.folding": true
+        },
+        {
+          "editor.lineNumbers": "on",
+          "editor.folding": true
+        }
+      ]
+    },
+    {
+      "id": "indentation",
+      "values": [
+        {
+          "indenticator.showIndentGuide": false
+        },
+        {
+          "indenticator.showIndentGuide": true
+        }
+      ]
+    }
+  ],
+
+  // CUSTOM UI STYLESHEET
+  "custom-ui-style.stylesheet": {
+    ".notification-toast": "box-shadow: none !important",
+    ".quick-input-widget.show-file-icons": "box-shadow: none !important",
+    ".quick-input-list .scrollbar": "display: none",
+    ".quick-input-widget": "top: 50% !important; transform: translateY(-51%); border: 1px solid #ffffff12;",
+    ".quick-input-widget .monaco-inputbox": " border-radius: 8px;  margin-bottom: 4px;",
+    ".quick-input-widget .monaco-list-rows": "background: transparent !important;",
+    ".monaco-workbench .part.editor .tabs-container .tab .tab-actions .action-label.codicon-close": "box-shadow: none !important; filter: none !important",
+    ".monaco-workbench .part.editor .tabs-container .tab:hover .tab-actions .action-label.codicon-close": "box-shadow: none !important; filter: none !important",
+    ".monaco-workbench .part.editor .tabs-container .tab.active .tab-actions .action-label.codicon-close": "box-shadow: none !important; filter: none !important",
+    ".monaco-workbench .part.editor .tabs-container .tab .tab-actions::before": "content: none !important; background: none !important",
+    ".monaco-workbench .part.editor .tabs-container .tab .tab-actions": "background: none !important; box-shadow: none !important",
+    ".monaco-workbench .part.editor .tabs-container .tab .action-label.codicon-close": "box-shadow: none !important; filter: none !important",
+    ".monaco-workbench .part.editor .tabs-container .tab:hover .action-label.codicon-close": "box-shadow: none !important; filter: none !important",
+    ".monaco-workbench .part.editor .tabs-container .tab.active .action-label.codicon-close": "box-shadow: none !important; filter: none !important",
+    ".monaco-workbench .part.editor .tabs-container .tab.active:hover .action-label.codicon-close": "box-shadow: none !important; filter: none !important",
+    ".monaco-workbench .part.sidebar .title-actions": "display: none",
+    ".monaco-workbench .part.sidebar .title .title-actions": "display: none",
+    ".editor-group-container .editor-container:has(.extension-editor)": "border-radius: 0.5rem;",
+    ".monaco-editor": "border-radius: 0.5rem; overflow: hidden;",
+    ".monaco-editor .overflow-guard": "border-radius: 0rem;",
+    ".monaco-editor .overflow-guard .monaco-scrollable-element": "border-radius: 0rem;",
+    ".monaco-editor .margin": "border-radius: 0rem;",
+    ".monaco-editor .margin-view-overlays": "border-radius: 0rem;",
+    ".monaco-editor .monaco-editor-background": "border-radius: 0rem;",
+    ".monaco-action-bar.quick-input-inline-action-bar": "display: none",
+    ".editor-widget.find-widget": "box-shadow: none; border-radius: 4px",
+    ".quick-input-titlebar": "background: #100B15 !important",
+    ".monaco-workbench .part.editor > .content .editor-group-container > .title.title-border-bottom:after": "display: none",
+    ".monaco-scrollable-element > .shadow.top": "display: none",
+    ".sidebar .title-label": "padding: 0 !important",
+    ".sidebar": "border: none !important",
+    ".monaco-workbench .monaco-list:not(.element-focused):focus:before": "outline: none !important",
+    ".monaco-list-row.focused": "outline: none !important",
+    ".monaco-editor .scroll-decoration": "display: none !important",
+    ".monaco-workbench .part.editor>.content .editor-group-container>.title .tabs-container>.tab": "border-radius: 0.5rem 0.5rem 0 0 !important; overflow: hidden !important;",
+    ".monaco-workbench .part.editor>.content .editor-group-container>.title .tabs-container>.tab.active": "border-radius: 0.5rem 0.5rem 0 0 !important; overflow: hidden !important;",
+    ".monaco-workbench .part.editor > .content": "border-radius: 0.5rem !important; overflow: hidden !important;",
+    ".monaco-workbench .part.sidebar .secondary-sidebar": "border-radius: .5rem  !important;",
+    ".monaco-workbench .part.sidebar": "border-radius: 0.5rem !important; overflow: hidden !important;",
+    ".monaco-workbench .notification-toast .monaco-button": "border-radius: 6px !important;",
+    ".monaco-workbench .notification-toast": "border-radius: 20px !important;",
+    ".monaco-editor-background": "border-radius: 0rem !important;",
+    ".monaco-editor .monaco-scrollable-element": "border-radius:  0rem !important;",
+    ".monaco-scrollable-element > .scrollbar.vertical": "border-radius:  0rem  !important;",
+    ".monaco-scrollable-element > .scrollbar.horizontal": "border-radius: 0rem !important;",
+    ".editor-group-container .editor-instance": "border-radius:  0rem !important; overflow: hidden !important;",
+    ".monaco-editor .editor-scrollable": "border-radius:  0rem !important;",
+    ".monaco-workbench .part.editor>.content .editor-group-container>.title .tabs-container>.tab": "border-radius: 0.5rem  0.5rem 0 0 !important;",
+    ".monaco-workbench .part.editor>.content .editor-group-container>.title .tabs-container>.tab.active.tab-border-top>.tab-border-top-container, .monaco-workbench .part.editor>.content .editor-group-container>.title .tabs-container>.tab.selected.tab-border-top>.tab-border-top-container": "height: 0 !important;",
+    ".breadcrumbs-below-tabs": "border-radius: 0.5rem 0.5rem 0 0 !important; overflow: hidden !important; padding: 9px 0 !important; background: var(--vscode-editor-background) !important; color: var(--vscode-editor-foreground) !important;",
+    ".monaco-breadcrumbs": "font-size: 0.7rem !important;",
+    ".monaco-editor .sticky-widget": "box-shadow: none !important; border-color: var(--vscode-editor-background) !important;",
+    ".monaco-workbench .part.editor>.content .editor-group-container.active>.title .tabs-container>.tab.active": "box-shadow: 0 6px 0 0 var(--vscode-editor-background) !important;",
+    ".tabs-and-actions-container:has(.tab.active:first-child)": "box-shadow: -20px 5px 0 0 var(--vscode-editor-background) !important;",
+    ".editor-group-container": "border-radius: 0.5rem !important; overflow: hidden !important;",
+    ".split-view-view.visible": "background: var(--vscode-editorGroupHeader-tabsBackground) !important;",
+    ".monaco-split-view2.separator-border.vertical>.monaco-scrollable-element>.split-view-container>.split-view-view:not(:first-child):before": "background: var(--vscode-editorGroupHeader-tabsBackground) !important;",
+    ".monaco-split-view2.separator-border>.monaco-scrollable-element>.split-view-container>.split-view-view:not(:first-child):before": "background: var(--vscode-editorGroupHeader-tabsBackground) !important;",
+    ".monaco-workbench .part.titlebar>.titlebar-container>.titlebar-center>.window-title>.command-center .action-item.command-center-center": "border-radius: 5rem !important; border: none !important;",
+    "li.action-item.icon.checked, li.action-item.icon:hover": "opacity: 1 !important;",
+    "li.action-item.icon": "transition: all 0.15s !important; opacity: 0.7 !important;",
+    ".monaco-pane-view .pane>.pane-header": "padding:  0 6px !important; border-radius: 5px !important; margin: 1px 5px 0 !important;",
+    ".monaco-workbench .part.sidebar>.title": "background: transparent !important; padding: 0 !important; border-radius: .5rem !important;",
+    ".monaco-workbench .pane-composite-part>.header-or-footer>.composite-bar-container>.composite-bar>.monaco-action-bar .action-item.checked .active-item-indicator:before, .monaco-workbench .pane-composite-part>.header-or-footer>.composite-bar-container>.composite-bar>.monaco-action-bar .action-item:focus .active-item-indicator:before, .monaco-workbench .pane-composite-part>.title>.composite-bar-container>.composite-bar>.monaco-action-bar .action-item.checked .active-item-indicator:before, .monaco-workbench .pane-composite-part>.title>.composite-bar-container>.composite-bar>.monaco-action-bar .action-item:focus .active-item-indicator:before": "border-top-width:1px !important;",
+    ".terminal-wrapper.active": "background: transparent !important;",
+    "div#terminal": "border-radius: .75rem !important; overflow: hidden !important;",
+    ".monaco-workbench .pane-body.integrated-terminal .terminal-split-pane": "border-radius: 0.5rem !important; overflow: hidden !important;"
+  },
   "workbench.colorCustomizations": {
+    "[One Dark Pro Darker]": {
+      "activityBar.background": "#1e2228",
+      "titleBar.activeBackground": "#1e2228",
+      "titleBar.inactiveBackground": "#1e2228",
+      "terminal.background": "#1e2228",
+      "panel.background": "#1e2228",
+      "sideBar.foreground": "#747e8d",
+      "tab.hoverBackground": "#262b3374"
+    },
+    "[One Dark Pro Mix]": {
+      "terminal.background": "#21252b",
+      "panel.background": "#21252b",
+      "tab.hoverBackground": "#2b2f367d"
+    },
+    "[Mokka]": {
+      "editor.background": "#1f1f1f",
+      "tab.activeBackground": "#2d2d2d41",
+      "titleBar.inactiveBackground": "#191919",
+      "sideBar.foreground": "#d5d5d567",
+      "list.inactiveSelectionBackground": "#49494947",
+      "list.hoverBackground": "#49494947",
+      "terminal.ansiBlack": "#191919",
+      "terminal.ansiBrightBlack": "#666666",
+      "terminal.ansiWhite": "#B3B3B3",
+      "terminal.ansiBrightWhite": "#FFFFFF",
+      "terminal.ansiBlue": "#70B0E0",
+      "terminal.ansiGreen": "#70afdf",
+      "terminal.ansiYellow": "#E0B070",
+      "terminal.ansiRed": "#E07070",
+      "terminal.ansiMagenta": "#B070B0",
+      "terminal.ansiCyan": "#e48fe4",
+      "terminal.ansiBrightRed": "#FF8080",
+      "terminal.ansiBrightYellow": "#8fbf70"
+    },
     "list.focusOutline": "#00000000",
-
     "[Best Themes - Github Dark Dimmed]": {
-      // "editor.background": "#1e1e1e",
       "editorGroupHeader.tabsBackground": "#1c2128",
       "titleBar.activeBackground": "#1c2128",
       "titleBar.inactiveBackground": "#1c2128",
       "activityBar.background": "#1c2128",
       "statusBar.background": "#1c2128",
       "statusBar.border": "#00000000"
-      // "tab.activeBackground": "#1e1e1e",
-      // "tab.inactiveBackground": "#1e1e1e",
-      // "tab.hoverBackground": "#1e1e1e",
-      // "editorGutter.background": "#1e1e1e",
-      // "editorGroupHeader.tabsBorder": "#1e1e1e",
-      // "sideBar.background": "#1e1e1e",
-      // "sideBar.foreground": "#d5d5d5a9",
-      // "statusBar.background": "#1e1e1e",
-      // "activityBar.background": "#1e1e1e",
-      // "titleBar.activeBackground": "#1e1e1e",
-      // "titleBar.inactiveBackground": "#1e1e1e",
-      // "panel.background": "#1e1e1e",
-      // "panel.border": "#00000000",
-      // "terminal.background": "#1e1e1e",
-      // "terminal.foreground": "#d5d5d5",
-      // "terminalCursor.background": "#d5d5d5",
-      // "terminalCursor.foreground": "#d5d5d5"
+    },
+    "[Min Darker]": {
+      "titleBar.activeBackground": "#0d0d0d",
+      "titleBar.inactiveBackground": "#0d0d0d"
+    },
+    "[Minimal]": {
+      "sideBar.background": "#1a1a1a",
+      "sideBar.foreground": "#d5d5d58f",
+      "titleBar.activeBackground": "#1a1a1a",
+      "titleBar.inactiveBackground": "#1a1a1a",
+      "terminal.background": "#1a1a1a",
+      "panel.background": "#1a1a1a",
+      "editorGroupHeader.tabsBackground": "#1a1a1a",
+      "tab.inactiveBackground": "#1a1a1a",
+      "tab.activeBackground": "#222222",
+      "tab.hoverBackground": "#22222298",
+      "editorLineNumber.foreground": "#5c5c5c"
     },
     "[Min Dark]": {
+      "editorLineNumber.foreground": "#5c5c5c",
       "terminal.background": "#1a1a1a",
+      "terminal.foreground": "#C0C0C0",
+      "terminalCursor.foreground": "#E0E0E0",
+      "terminalCursor.background": "#E0E0E0",
+      "terminal.selectionBackground": "#363636",
+      "terminal.ansiBlack": "#1A1A1A",
+      "terminal.ansiRed": "#FF7A84",
+      "terminal.ansiGreen": "#67AB91",
+      "terminal.ansiYellow": "#FFAB70",
+      "terminal.ansiBlue": "#79B8FF",
+      "terminal.ansiMagenta": "#B392F0",
+      "terminal.ansiCyan": "#7CAFC2",
+      "terminal.ansiWhite": "#E0E0E0",
+      "terminal.ansiBrightBlack": "#666666",
+      "terminal.ansiBrightRed": "#FF7A84",
+      "terminal.ansiBrightGreen": "#67AB91",
+      "terminal.ansiBrightYellow": "#FFAB70",
+      "terminal.ansiBrightBlue": "#79B8FF",
+      "terminal.ansiBrightMagenta": "#B392F0",
+      "terminal.ansiBrightCyan": "#7CAFC2",
+      "terminal.ansiBrightWhite": "#FFFFFF",
       "menu.background": "#1a1a1a",
       "panel.background": "#1a1a1a",
-      // header background
-      "editorGroupHeader.tabsBackground": "#1a1a1a"
-      // "editor.background": "#1e1e1e",
-      // "editorGroupHeader.tabsBackground": "#1e1e1e",
-      // "tab.activeBackground": "#1e1e1e",
-      // "tab.inactiveBackground": "#1e1e1e",
-      // "tab.hoverBackground": "#1e1e1e",
-      // "editorGutter.background": "#1e1e1e",
-      // "editorGroupHeader.tabsBorder": "#1e1e1e",
-      // "sideBar.background": "#1e1e1e",
-      // "sideBar.foreground": "#d5d5d5a9",
-      // "statusBar.background": "#1e1e1e",
-      // "activityBar.background": "#1e1e1e",
-      // "titleBar.activeBackground": "#1e1e1e",
-      // "titleBar.inactiveBackground": "#1e1e1e",
-      // "panel.background": "#1e1e1e",
-      // "panel.border": "#00000000",
-      // "terminal.background": "#1e1e1e",
-      // "terminal.foreground": "#d5d5d5",
-      // "terminalCursor.background": "#d5d5d5",
-      // "terminalCursor.foreground": "#d5d5d5"
+      "titleBar.activeBackground": "#1a1a1a",
+      "titleBar.inactiveBackground": "#1a1a1a",
+      "editor.background": "#212121",
+      "tab.activeBackground": "#232323",
+      "tab.hoverBackground": "#1f1f1f",
+      "editor.selectionBackground": "#393634be"
     },
     "[Violaceous (rainglow)]": {
       "editorGutter.background": "#242038",
@@ -261,7 +535,6 @@
       "editor.lineHighlightBackground": "#2a2c2d",
       "editor.lineHighlightBorder": "#2a2c2d",
       "tab.activeBackground": "#2a2c2d",
-      // "sideBar.border": "#353535",
       "terminal.background": "#191919",
       "terminal.foreground": "#A0A0A0",
       "terminalCursor.background": "#AA9175",
@@ -315,16 +588,18 @@
       "sideBar.background": "#1e2228",
       "list.inactiveSelectionBackground": "#2c313c",
       "statusBar.background": "#1e2228",
+      "tab.hoverBackground": "#262b3374",
       "editor.background": "#1e2228",
-      "titleBar.activeBackground": "#1e2228",
+      "titleBar.activeBackground": "#1e222890",
       "sideBar.border": "#00000000",
-      "tab.activeBackground": "#2b2f36",
+      "tab.activeBackground": "#2b2f3661",
       "activityBar.background": "#1e2228",
       "titleBar.inactiveBackground": "#1e2228",
       "panel.border": "#00000000",
+      "list.hoverForeground": "#747e8d",
       "editorGutter.background": "#1e2228",
       "editorGroupHeader.tabsBorder": "#1e2228",
-      "sideBar.foreground": "#d5d5d5a9",
+      "sideBar.foreground": "#747e8d",
       "terminal.background": "#1e2228"
     },
     "[Blueberry dark theme]": {
@@ -345,129 +620,56 @@
       "titleBar.activeBackground": "#242938",
       "titleBar.inactiveBackground": "#242938"
     },
-    "[Serendipity Sunset]": {
-      "titleBar.activeBackground": "#232038",
-      "titleBar.inactiveBackground": "#232038",
-      "terminal.background": "#232038",
-      "panel.background": "#232038",
-      "editor.background": "#232038",
-      "sideBar.background": "#232038",
-      "activityBar.background": "#232038",
-      "menu.background": "#232038"
-    },
     "[Tokyo Night]": {
-      "tab.activeBorderTop": "#3d59a1",
-      "tab.border": "#00000000",
-      "tab.activeBorder": "#00000000"
+      "tab.activeBackground": "#1a1b26"
     },
-    "[Tokyo Night Storm]": {
-      "scrollbarSlider.hoverBackground": "#61759d7d",
-      "scrollbarSlider.activeBackground": "#61759d7d",
-      "tab.activeBorderTop": "#838cad",
-      "tab.activeBorder": "#00000000",
-      "tab.hoverBorder": "#00000000",
-      "editorGroup.border": "#00000000",
-      "editorGroupHeader.tabsBorder": "#00000000",
-      "tab.border": "#00000000",
-      "tab.unfocusedHoverBackground": "#ffffff",
-      "editor.background": "#1f2335",
-      "tab.activeBackground": "#00000000",
-      "list.hoverBackground": "#30334b5f",
-      "tab.hoverBackground": "#292c41",
-      "titleBar.inactiveForeground": "#626b8b",
-      "titleBar.activeForeground": "#838cad",
-      "terminal.background": "#1b1f2f",
-      "panel.background": "#1b1f2f",
-      "statusBar.background": "#1b1f2f",
-      "sideBar.background": "#1b1f2f",
-      "sideBar.foreground": "#6a7195",
-      "activityBar.background": "#1b1f2f"
-    },
-    "[One Darker Pro]": {
-      "sideBar.foreground": "#d5d5d5ad"
-    },
-    "[One Dark Darker]": {
-      "tab.activeBorderTop": "#828C9E",
-      "scrollbarSlider.hoverBackground": "#676d7997",
-      "tab.hoverBackground": "#2c313c9b",
-      "sideBar.foreground": "#6a737d",
-      "editorGutter.foldingControlForeground": "#6a737d",
-      "terminal.border": "#00000000",
-      "panel.border": "#00000000",
-      "editorCursor.foreground": "#d5d5d5",
-      "tab.border": "#00000000"
-    },
-    "[IntelliJ Neo Dark]": {},
-    "[One Dark Pro]": {
-      "sideBar.background": "#282c34",
-      "editorGroupHeader.tabsBackground": "#282c34",
-      "tab.inactiveBackground": "#282c34",
-      "tab.activeBackground": "#00000000",
-      "tab.border": "#00000000",
-      "sideBar.foreground": "#d5d5d5a7",
-      "statusBar.background": "#282c34",
-      "panel.border": "#00000000",
-      "terminal.border": "#00000000",
-      "sideBar.border": "#00000000",
-      "tab.activeBorder": "#00000000",
-      "tab.activeBorderTop": "#ffffff7a",
-      "tab.hoverBackground": "#343841a7",
-      "titleBar.inactiveBackground": "#282c34"
-    },
-    "[One Dark Pro Darker]": {
-      "editorGroupHeader.tabsBackground": "#23272e",
-      "tab.inactiveBackground": "#23272e",
-      "tab.activeBackground": "#2d3139",
+    "[Vesper Purple Dark]": {
+      "terminal.background": "#141414",
+      "panel.background": "#141414",
+      "sideBar.foreground": "#d5d5d576",
+      "titleBar.activeBackground": "#141414",
+      "editorGroupHeader.tabsBackground": "#141414",
+      "tab.inactiveBackground": "#141414",
+      "sideBar.background": "#141414",
+      "editor.background": "#1f1f1f",
       "tab.activeBorderTop": "#00000000",
-      "tab.activeBorder": "#00000000",
-      "tab.border": "#00000000",
-      "list.inactiveSelectionBackground": "#2c313c",
-      "statusBar.background": "#23272e",
-      "titleBar.activeBackground": "#23272e",
-      "terminal.background": "#23272e",
-      "panel.background": "#23272e",
-      "terminal.border": "#00000000",
-      "panel.border": "#84848429",
-      "sideBar.background": "#23272e",
-      "sideBar.border": "#84848429",
-      "sideBar.foreground": "#d5d5d579",
-      "editor.selectionBackground": "#3e4451de",
-      "editor.lineHighlightBackground": "#2c313c",
-      "editorCursor.foreground": "#d5d5d5"
-    },
-    "[PurpleSchool Theme]": {
-      "editorGroupHeader.tabsBorder": "#1e2228",
-      "tab.activeBackground": "#2c1d4dca",
-      "tab.activeBorderTop": "#00000000",
-      "activityBar.activeBackground": "#00000000"
+      "tab.activeBackground": "#1f1f1f",
+      "tab.hoverBackground": "#181818",
+      "activityBar.activeBorder": "#ff000000",
+      "activityBarBadge.background": "#a0a0a0",
+      "activityBar.foreground": "#bdbdbd",
+      "gitDecoration.untrackedResourceForeground": "#ac82cd",
+      "gitDecoration.modifiedResourceForeground": "#bc809f",
+      "terminal.ansiBlack": "#191919",
+      "terminal.ansiBrightBlack": "#666666",
+      "terminal.ansiWhite": "#B3B3B3",
+      "terminal.ansiBrightWhite": "#FFFFFF",
+      "terminal.ansiBlue": "#70B0E0",
+      "terminal.ansiGreen": "#c290e5",
+      "terminal.ansiYellow": "#E0B070",
+      "terminal.ansiRed": "#E07070",
+      "terminal.ansiMagenta": "#B070B0",
+      "terminal.ansiCyan": "#ec9bb8",
+      "terminal.ansiBrightRed": "#FF8080",
+      "terminal.ansiBrightYellow": "#a9a9a9"
     },
     "[Tokyo Night Light]": {
-      "titleBar.activeBackground": "#e6e7ed",
-      "editorGroupHeader.tabsBackground": "#e6e7ed",
-      "tab.inactiveBackground": "#e6e7ed",
-      "titleBar.inactiveBackground": "#e6e7ed",
-      "tab.activeBackground": "#00000000",
-      "tab.activeBorderTop": "#838cad",
+      "titleBar.activeBackground": "#d6d8df",
+      "editorGroupHeader.tabsBackground": "#d6d8df",
+      "tab.inactiveBackground": "#d6d8df",
+      "list.activeSelectionBackground": "#d6d8df",
+      "titleBar.inactiveBackground": "#d6d8df",
+      "tab.activeBackground": "#e6e7ed",
       "tab.border": "#e6e7ed00",
-      "tab.hoverBackground": "#d6d8df83",
+      "tab.hoverBackground": "#e6e7ed72",
       "panel.border": "#00000000",
       "editorGroup.border": "#00000000",
       "editorGroupHeader.tabsBorder": "#00000000",
       "tab.hoverBorder": "#00000000",
       "tab.activeBorder": "#00000000",
       "titleBar.border": "#00000000",
-      "window.activeBorder": "#00000000"
-    },
-    "[1Dark RainCoat Light]": {
-      "terminal.background": "#e1e4eb",
-      "terminal.foreground": "#000000",
-      "panel.background": "#e1e4eb",
-      "titleBar.activeBackground": "#e1e4eb",
-      "editorGroupHeader.tabsBorder": "#00000000",
-      "tab.border": "#00000000",
-      "tab.hoverBorder": "#00000000",
-      "titleBar.inactiveBackground": "#e1e4eb",
-      "statusBar.background": "#e1e4eb"
+      "window.activeBorder": "#00000000",
+      "activityBar.activeBorder": "#00000000"
     },
     "[Sequoia Monochrome]": {
       "editor.background": "#1a1b26"
@@ -503,41 +705,6 @@
       "terminal.background": "#e1e4eb",
       "terminal.border": "#00000000"
     },
-    "[Rosé Pine (no italics)]": {
-      "terminal.background": "#191724",
-      "panel.background": "#191724",
-      "tab.activeBorder": "#676196"
-    },
-    "[Rosé Pine Moon (no italics)]": {
-      "sideBar.background": "#1f1d30",
-      "sideBar.foreground": "#747090",
-      "terminal.background": "#1f1d30",
-      "panel.background": "#1f1d30",
-      "tab.activeBorder": "#676196"
-    },
-    "[One Dark Pro Flat]": {
-      "sideBar.foreground": "#d5d5d588",
-      "terminal.border": "#ffffff00",
-      "sideBar.border": "#62626265",
-      "tab.activeBorder": "#00000000",
-      "tab.activeBackground": "#333844",
-      "tab.border": "#00000000"
-    },
-    "[One Dark Pro Mix]": {
-      "panel.background": "#21252b",
-      "terminal.background": "#21252b",
-      "terminal.border": "#00000000",
-      "sideBar.foreground": "#d5d5d57a",
-      "tab.activeBorderTop": "#00000000",
-      "tab.activeBorder": "#ffffff00",
-      "panel.border": "#00000000",
-      "editorGroupHeader.tabsBackground": "#282c34",
-      "tab.activeBackground": "#333844",
-      "tab.inactiveBackground": "#282c34",
-      "tab.border": "#00000000",
-      "titleBar.activeBackground": "#282c34",
-      "titleBar.inactiveBackground": "#282c34"
-    },
     "[GitHub Dark Dimmed]": {
       "editorGroupHeader.tabsBackground": "#22272e",
       "editorGroupHeader.tabsBorder": "#00000000",
@@ -549,8 +716,11 @@
       "tab.hoverBackground": "#323942ac",
       "tab.activeBorder": "#00000000"
     },
-
-    // Gemeral settings
+    "[Atom One Light]": {
+      "activityBar.background": "#eaeaeb",
+      "statusBar.background": "#fafafa",
+      "tab.hoverBackground": "#f0f0f0"
+    },
     "activityBar.border": "#00000000",
     "tab.border": "#00000000",
     "panel.border": "#00000000",
@@ -559,276 +729,16 @@
     "diffEditor.border": "#00000000",
     "titleBar.border": "#00000000",
     "editorGroupHeader.border": "#00000000",
-    "scrollbar.shadow": "#00000000",
+    "scrollbar.shadow": "#acabab00",
     "widget.shadow": "#00000000",
     "editor.foldBackground": "#00000000",
     "window.titleBarStyle": "",
-    "sideBarTitle.foreground": "#00000000",
     "sideBarTitle.background": "#00000000",
     "sideBar.border": "#00000000",
     "editorGroupHeader.tabsBorder": "#00000000",
     "editorGroup.border": "#00000000",
-    "focusBorder": "#00000000"
-    // "activityBarTop.foreground": "#00000000",
-    // "activityBarTop.background": "#00000000",
-    // "activityBar.border": "#00000000"
-  },
-
-  // Auto-save settings
-  "files.autoSave": "afterDelay",
-  "files.autoSaveDelay": 10000,
-
-  // Diff and SCM settings
-  "diffEditor.hideUnchangedRegions.enabled": true,
-  "scm.showIncomingChanges": "true",
-  "scm.showOutgoingChanges": "true",
-
-  // Other settings
-  // "workbench.tree.indent": 5,
-  "editor.accessibilitySupport": "off",
-  "workbench.editor.empty.hint": "hidden",
-  "breadcrumbs.enabled": false,
-  "editor.renderControlCharacters": false,
-  "breadcrumbs.icons": false,
-  "explorer.decorations.colors": false,
-  "explorer.decorations.badges": true,
-  "editor.overviewRulerBorder": false,
-  "editor.renderWhitespace": "none",
-  "editor.scrollbar.horizontal": "hidden",
-  "editor.scrollbar.vertical": "auto",
-  "editor.suggestSelection": "first",
-  "terminal.integrated.scrollback": 10000,
-  "editor.scrollbar.verticalScrollbarSize": 0,
-  "editor.showFoldingControls": "mouseover",
-  "editor.glyphMargin": false,
-  "editor.padding.top": 10,
-  "editor.folding": true,
-  "editor.foldingStrategy": "auto",
-  "tailwind-fold.unfoldIfLineSelected": false,
-  "explorer.fileNesting.enabled": true,
-  "explorer.fileNesting.expand": false,
-  "chat.editor.fontSize": 11,
-  "chat.editor.wordWrap": "on",
-  "editor.renderLineHighlight": "none",
-
-  "vscode_custom_css.imports": [
-    "file:///c:/Users/adrs1/.vscode/extensions/brandonkirbyson.vscode-animations-2.0.2/dist/updateHandler.js"
-  ],
-
-  "window.autoDetectColorScheme": true,
-  "workbench.preferredHighContrastLightColorTheme": "Atom One Light",
-  "gitlens.graph.minimap.enabled": false,
-  "gitlens.graph.minimap.additionalTypes": ["tags"],
-  "gitlens.graph.layout": "editor",
-  "diffEditor.ignoreTrimWhitespace": false,
-  "workbench.reduceMotion": "on",
-  "terminal.integrated.env.windows": {},
-  "console-ninja.featureSet": "Community",
-  "tailwind-fold.autoFold": false,
-  "[typescriptreact]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "window.menuBarVisibility": "compact",
-  "editor.matchBrackets": "never",
-  "oneDarkPro.bold": false,
-  "oneDarkPro.vivid": false,
-  "workbench.tree.enableStickyScroll": false,
-  "editor.stickyScroll.enabled": false,
-  "editor.stickyScroll.scrollWithEditor": false,
-  "[javascriptreact]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-
-  "apc.sidebar.titlebar": {
-    "height": -20,
-    "fontSize": -10
-  },
-  "apc.stylesheet": {
-    // ".explorer-folders-view": "zoom: 1.0;"
-    ".tabs-container": "margin-bottom: 10px;"
-  },
-
-  // "apc.monospace.font.family": "Cascadia Code, Consolas, 'Courier New', monospace",
-  "apc.listRow": {
-    // "lists": ["explorer-folders-view"],
-    "height": 19.5,
-    "fontSize": 11.5
-  },
-  "telemetry.telemetryLevel": "off",
-  "workbench.editor.tabSizing": "shrink",
-  "apc.imports": [
-    // "file:///c:/Users/adrs1/oneDrive/Documents/VSCode/CustomCSS/vscode-styles.css"
-  ],
-  "update.mode": "default",
-  "apc.menubar.compact": true,
-
-  "editor.cursorBlinking": "blink",
-  "editor.cursorSmoothCaretAnimation": "off",
-  "[javascript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "supermaven.otherWarning": false,
-  "supermaven.enable": {
-    "*": false
-  },
-  "explorer.fileNesting.patterns": {
-    "//": "Last update at 22/9/2024, 17:48:31",
-    ".clang-tidy": ".clang-format, .clangd, compile_commands.json",
-    ".env": "*.env, .env.*, .envrc, env.d.ts",
-    ".gitignore": ".gitattributes, .gitmodules, .gitmessage, .mailmap, .git-blame*",
-    ".project": ".classpath",
-    "+layout.svelte": "+layout.ts,+layout.ts,+layout.js,+layout.server.ts,+layout.server.js,+layout.gql",
-    "+page.svelte": "+page.server.ts,+page.server.js,+page.ts,+page.js,+page.gql",
-    "ansible.cfg": "ansible.cfg, .ansible-lint, requirements.yml",
-    "app.config.*": "*.env, .babelrc*, .codecov, .cssnanorc*, .env.*, .envrc, .htmlnanorc*, .lighthouserc.*, .mocha*, .postcssrc*, .terserrc*, api-extractor.json, ava.config.*, babel.config.*, capacitor.config.*, contentlayer.config.*, cssnano.config.*, cypress.*, env.d.ts, formkit.config.*, formulate.config.*, histoire.config.*, htmlnanorc.*, i18n.config.*, ionic.config.*, jasmine.*, jest.config.*, jsconfig.*, karma*, lighthouserc.*, panda.config.*, playwright.config.*, postcss.config.*, puppeteer.config.*, rspack.config.*, sst.config.*, svgo.config.*, tailwind.config.*, tsconfig.*, tsdoc.*, uno.config.*, unocss.config.*, vitest.config.*, vuetify.config.*, webpack.config.*, windi.config.*",
-    "artisan": "*.env, .babelrc*, .codecov, .cssnanorc*, .env.*, .envrc, .htmlnanorc*, .lighthouserc.*, .mocha*, .postcssrc*, .terserrc*, api-extractor.json, ava.config.*, babel.config.*, capacitor.config.*, contentlayer.config.*, cssnano.config.*, cypress.*, env.d.ts, formkit.config.*, formulate.config.*, histoire.config.*, htmlnanorc.*, i18n.config.*, ionic.config.*, jasmine.*, jest.config.*, jsconfig.*, karma*, lighthouserc.*, panda.config.*, playwright.config.*, postcss.config.*, puppeteer.config.*, rspack.config.*, server.php, sst.config.*, svgo.config.*, tailwind.config.*, tsconfig.*, tsdoc.*, uno.config.*, unocss.config.*, vitest.config.*, vuetify.config.*, webpack.config.*, webpack.mix.js, windi.config.*",
-    "astro.config.*": "*.env, .babelrc*, .codecov, .cssnanorc*, .env.*, .envrc, .htmlnanorc*, .lighthouserc.*, .mocha*, .postcssrc*, .terserrc*, api-extractor.json, ava.config.*, babel.config.*, capacitor.config.*, contentlayer.config.*, cssnano.config.*, cypress.*, env.d.ts, formkit.config.*, formulate.config.*, histoire.config.*, htmlnanorc.*, i18n.config.*, ionic.config.*, jasmine.*, jest.config.*, jsconfig.*, karma*, lighthouserc.*, panda.config.*, playwright.config.*, postcss.config.*, puppeteer.config.*, rspack.config.*, sst.config.*, svgo.config.*, tailwind.config.*, tsconfig.*, tsdoc.*, uno.config.*, unocss.config.*, vitest.config.*, vuetify.config.*, webpack.config.*, windi.config.*",
-    "build-wrapper.log": "build-wrapper*.log, build-wrapper-dump*.json, build-wrapper-win*.exe, build-wrapper-linux*, build-wrapper-macosx*",
-    "BUILD.bazel": "*.bzl, *.bazel, *.bazelrc, bazel.rc, .bazelignore, .bazelproject, WORKSPACE",
-    "Cargo.toml": ".clippy.toml, .rustfmt.toml, cargo.lock, clippy.toml, cross.toml, rust-toolchain.toml, rustfmt.toml",
-    "CMakeLists.txt": "*.cmake, *.cmake.in, .cmake-format.yaml, CMakePresets.json, CMakeCache.txt",
-    "composer.json": ".php*.cache, composer.lock, phpunit.xml*, psalm*.xml",
-    "default.nix": "shell.nix",
-    "deno.json*": "*.env, .env.*, .envrc, api-extractor.json, deno.lock, env.d.ts, import-map.json, import_map.json, jsconfig.*, tsconfig.*, tsdoc.*",
-    "Dockerfile": "*.dockerfile, .devcontainer.*, .dockerignore, captain-definition, compose.*, docker-compose.*, dockerfile*",
-    "flake.nix": "flake.lock",
-    "gatsby-config.*": "*.env, .babelrc*, .codecov, .cssnanorc*, .env.*, .envrc, .htmlnanorc*, .lighthouserc.*, .mocha*, .postcssrc*, .terserrc*, api-extractor.json, ava.config.*, babel.config.*, capacitor.config.*, contentlayer.config.*, cssnano.config.*, cypress.*, env.d.ts, formkit.config.*, formulate.config.*, gatsby-browser.*, gatsby-node.*, gatsby-ssr.*, gatsby-transformer.*, histoire.config.*, htmlnanorc.*, i18n.config.*, ionic.config.*, jasmine.*, jest.config.*, jsconfig.*, karma*, lighthouserc.*, panda.config.*, playwright.config.*, postcss.config.*, puppeteer.config.*, rspack.config.*, sst.config.*, svgo.config.*, tailwind.config.*, tsconfig.*, tsdoc.*, uno.config.*, unocss.config.*, vitest.config.*, vuetify.config.*, webpack.config.*, windi.config.*",
-    "gemfile": ".ruby-version, gemfile.lock",
-    "go.mod": ".air*, go.sum",
-    "go.work": "go.work.sum",
-    "hatch.toml": ".editorconfig, .flake8, .isort.cfg, .python-version, hatch.toml, requirements*.in, requirements*.pip, requirements*.txt, tox.ini",
-    "I*.cs": "$(capture).cs",
-    "Makefile": "*.mk",
-    "mix.exs": ".credo.exs, .dialyzer_ignore.exs, .formatter.exs, .iex.exs, .tool-versions, mix.lock",
-    "next.config.*": "*.env, .babelrc*, .codecov, .cssnanorc*, .env.*, .envrc, .htmlnanorc*, .lighthouserc.*, .mocha*, .postcssrc*, .terserrc*, api-extractor.json, ava.config.*, babel.config.*, capacitor.config.*, contentlayer.config.*, cssnano.config.*, cypress.*, env.d.ts, formkit.config.*, formulate.config.*, histoire.config.*, htmlnanorc.*, i18n.config.*, ionic.config.*, jasmine.*, jest.config.*, jsconfig.*, karma*, lighthouserc.*, next-env.d.ts, next-i18next.config.*, panda.config.*, playwright.config.*, postcss.config.*, puppeteer.config.*, rspack.config.*, sst.config.*, svgo.config.*, tailwind.config.*, tsconfig.*, tsdoc.*, uno.config.*, unocss.config.*, vitest.config.*, vuetify.config.*, webpack.config.*, windi.config.*",
-    "nuxt.config.*": "*.env, .babelrc*, .codecov, .cssnanorc*, .env.*, .envrc, .htmlnanorc*, .lighthouserc.*, .mocha*, .nuxtignore, .nuxtrc, .postcssrc*, .terserrc*, api-extractor.json, ava.config.*, babel.config.*, capacitor.config.*, contentlayer.config.*, cssnano.config.*, cypress.*, env.d.ts, formkit.config.*, formulate.config.*, histoire.config.*, htmlnanorc.*, i18n.config.*, ionic.config.*, jasmine.*, jest.config.*, jsconfig.*, karma*, lighthouserc.*, panda.config.*, playwright.config.*, postcss.config.*, puppeteer.config.*, rspack.config.*, sst.config.*, svgo.config.*, tailwind.config.*, tsconfig.*, tsdoc.*, uno.config.*, unocss.config.*, vitest.config.*, vuetify.config.*, webpack.config.*, windi.config.*",
-    "package.json": "*.code-workspace, .browserslist*, .circleci*, .commitlint*, .cz-config.js, .czrc, .dlint.json, .dprint.json*, .editorconfig, .eslint*, .firebase*, .flowconfig, .github*, .gitlab*, .gitmojirc.json, .gitpod*, .huskyrc*, .jslint*, .knip.*, .lintstagedrc*, .markdownlint*, .node-version, .nodemon*, .npm*, .nvmrc, .pm2*, .pnp.*, .pnpm*, .prettier*, .pylintrc, .release-please*.json, .releaserc*, .ruff.toml, .sentry*, .simple-git-hooks*, .stackblitz*, .styleci*, .stylelint*, .tazerc*, .textlint*, .tool-versions, .travis*, .versionrc*, .vscode*, .watchman*, .xo-config*, .yamllint*, .yarnrc*, Procfile, apollo.config.*, appveyor*, azure-pipelines*, biome.json*, bower.json, build.config.*, bun.lockb, bunfig.toml, commitlint*, crowdin*, dangerfile*, dlint.json, dprint.json*, electron-builder.*, eslint*, firebase.json, grunt*, gulp*, jenkins*, knip.*, lerna*, lint-staged*, nest-cli.*, netlify*, nodemon*, npm-shrinkwrap.json, nx.*, package-lock.json, package.nls*.json, phpcs.xml, pm2.*, pnpm*, prettier*, pullapprove*, pyrightconfig.json, release-please*.json, release-tasks.sh, release.config.*, renovate*, rollup.config.*, rspack*, ruff.toml, simple-git-hooks*, sonar-project.properties, stylelint*, tslint*, tsup.config.*, turbo*, typedoc*, unlighthouse*, vercel*, vetur.config.*, webpack*, workspace.json, wrangler.toml, xo.config.*, yarn*",
-    "Pipfile": ".editorconfig, .flake8, .isort.cfg, .python-version, Pipfile, Pipfile.lock, requirements*.in, requirements*.pip, requirements*.txt, tox.ini",
-    "pubspec.yaml": ".metadata, .packages, all_lint_rules.yaml, analysis_options.yaml, build.yaml, pubspec.lock, pubspec_overrides.yaml",
-    "pyproject.toml": ".commitlint*, .dlint.json, .dprint.json*, .editorconfig, .eslint*, .flake8, .flowconfig, .isort.cfg, .jslint*, .lintstagedrc*, .markdownlint*, .pdm-python, .pdm.toml, .prettier*, .pylintrc, .python-version, .ruff.toml, .stylelint*, .textlint*, .xo-config*, .yamllint*, MANIFEST.in, Pipfile, Pipfile.lock, biome.json*, commitlint*, dangerfile*, dlint.json, dprint.json*, eslint*, hatch.toml, lint-staged*, pdm.lock, phpcs.xml, poetry.lock, poetry.toml, prettier*, pyproject.toml, pyrightconfig.json, requirements*.in, requirements*.pip, requirements*.txt, ruff.toml, setup.cfg, setup.py, stylelint*, tox.ini, tslint*, uv.lock, uv.toml, xo.config.*",
-    "quasar.conf.js": "*.env, .babelrc*, .codecov, .cssnanorc*, .env.*, .envrc, .htmlnanorc*, .lighthouserc.*, .mocha*, .postcssrc*, .terserrc*, api-extractor.json, ava.config.*, babel.config.*, capacitor.config.*, contentlayer.config.*, cssnano.config.*, cypress.*, env.d.ts, formkit.config.*, formulate.config.*, histoire.config.*, htmlnanorc.*, i18n.config.*, ionic.config.*, jasmine.*, jest.config.*, jsconfig.*, karma*, lighthouserc.*, panda.config.*, playwright.config.*, postcss.config.*, puppeteer.config.*, quasar.extensions.json, rspack.config.*, sst.config.*, svgo.config.*, tailwind.config.*, tsconfig.*, tsdoc.*, uno.config.*, unocss.config.*, vitest.config.*, vuetify.config.*, webpack.config.*, windi.config.*",
-    "readme*": "AUTHORS, Authors, BACKERS*, Backers*, CHANGELOG*, CITATION*, CODEOWNERS, CODE_OF_CONDUCT*, CONTRIBUTING*, CONTRIBUTORS, COPYING*, CREDITS, Changelog*, Citation*, Code_Of_Conduct*, Codeowners, Contributing*, Contributors, Copying*, Credits, GOVERNANCE.MD, Governance.md, HISTORY.MD, History.md, LICENSE*, License*, MAINTAINERS, Maintainers, README-*, README_*, RELEASE_NOTES*, Readme-*, Readme_*, Release_Notes*, SECURITY.MD, SPONSORS*, Security.md, Sponsors*, authors, backers*, changelog*, citation*, code_of_conduct*, codeowners, contributing*, contributors, copying*, credits, governance.md, history.md, license*, maintainers, readme-*, readme_*, release_notes*, security.md, sponsors*",
-    "Readme*": "AUTHORS, Authors, BACKERS*, Backers*, CHANGELOG*, CITATION*, CODEOWNERS, CODE_OF_CONDUCT*, CONTRIBUTING*, CONTRIBUTORS, COPYING*, CREDITS, Changelog*, Citation*, Code_Of_Conduct*, Codeowners, Contributing*, Contributors, Copying*, Credits, GOVERNANCE.MD, Governance.md, HISTORY.MD, History.md, LICENSE*, License*, MAINTAINERS, Maintainers, README-*, README_*, RELEASE_NOTES*, Readme-*, Readme_*, Release_Notes*, SECURITY.MD, SPONSORS*, Security.md, Sponsors*, authors, backers*, changelog*, citation*, code_of_conduct*, codeowners, contributing*, contributors, copying*, credits, governance.md, history.md, license*, maintainers, readme-*, readme_*, release_notes*, security.md, sponsors*",
-    "README*": "AUTHORS, Authors, BACKERS*, Backers*, CHANGELOG*, CITATION*, CODEOWNERS, CODE_OF_CONDUCT*, CONTRIBUTING*, CONTRIBUTORS, COPYING*, CREDITS, Changelog*, Citation*, Code_Of_Conduct*, Codeowners, Contributing*, Contributors, Copying*, Credits, GOVERNANCE.MD, Governance.md, HISTORY.MD, History.md, LICENSE*, License*, MAINTAINERS, Maintainers, README-*, README_*, RELEASE_NOTES*, Readme-*, Readme_*, Release_Notes*, SECURITY.MD, SPONSORS*, Security.md, Sponsors*, authors, backers*, changelog*, citation*, code_of_conduct*, codeowners, contributing*, contributors, copying*, credits, governance.md, history.md, license*, maintainers, readme-*, readme_*, release_notes*, security.md, sponsors*",
-    "remix.config.*": "*.env, .babelrc*, .codecov, .cssnanorc*, .env.*, .envrc, .htmlnanorc*, .lighthouserc.*, .mocha*, .postcssrc*, .terserrc*, api-extractor.json, ava.config.*, babel.config.*, capacitor.config.*, contentlayer.config.*, cssnano.config.*, cypress.*, env.d.ts, formkit.config.*, formulate.config.*, histoire.config.*, htmlnanorc.*, i18n.config.*, ionic.config.*, jasmine.*, jest.config.*, jsconfig.*, karma*, lighthouserc.*, panda.config.*, playwright.config.*, postcss.config.*, puppeteer.config.*, remix.*, rspack.config.*, sst.config.*, svgo.config.*, tailwind.config.*, tsconfig.*, tsdoc.*, uno.config.*, unocss.config.*, vitest.config.*, vuetify.config.*, webpack.config.*, windi.config.*",
-    "requirements.txt": ".editorconfig, .flake8, .isort.cfg, .python-version, requirements*.in, requirements*.pip, requirements*.txt, tox.ini",
-    "rush.json": "*.code-workspace, .browserslist*, .circleci*, .commitlint*, .cz-config.js, .czrc, .dlint.json, .dprint.json*, .editorconfig, .eslint*, .firebase*, .flowconfig, .github*, .gitlab*, .gitmojirc.json, .gitpod*, .huskyrc*, .jslint*, .knip.*, .lintstagedrc*, .markdownlint*, .node-version, .nodemon*, .npm*, .nvmrc, .pm2*, .pnp.*, .pnpm*, .prettier*, .pylintrc, .release-please*.json, .releaserc*, .ruff.toml, .sentry*, .simple-git-hooks*, .stackblitz*, .styleci*, .stylelint*, .tazerc*, .textlint*, .tool-versions, .travis*, .versionrc*, .vscode*, .watchman*, .xo-config*, .yamllint*, .yarnrc*, Procfile, apollo.config.*, appveyor*, azure-pipelines*, biome.json*, bower.json, build.config.*, bun.lockb, bunfig.toml, commitlint*, crowdin*, dangerfile*, dlint.json, dprint.json*, electron-builder.*, eslint*, firebase.json, grunt*, gulp*, jenkins*, knip.*, lerna*, lint-staged*, nest-cli.*, netlify*, nodemon*, npm-shrinkwrap.json, nx.*, package-lock.json, package.nls*.json, phpcs.xml, pm2.*, pnpm*, prettier*, pullapprove*, pyrightconfig.json, release-please*.json, release-tasks.sh, release.config.*, renovate*, rollup.config.*, rspack*, ruff.toml, simple-git-hooks*, sonar-project.properties, stylelint*, tslint*, tsup.config.*, turbo*, typedoc*, unlighthouse*, vercel*, vetur.config.*, webpack*, workspace.json, wrangler.toml, xo.config.*, yarn*",
-    "sanity.config.*": "sanity.cli.*, sanity.types.ts, schema.json",
-    "setup.cfg": ".editorconfig, .flake8, .isort.cfg, .python-version, MANIFEST.in, requirements*.in, requirements*.pip, requirements*.txt, setup.cfg, tox.ini",
-    "setup.py": ".editorconfig, .flake8, .isort.cfg, .python-version, MANIFEST.in, requirements*.in, requirements*.pip, requirements*.txt, setup.cfg, setup.py, tox.ini",
-    "shims.d.ts": "*.d.ts",
-    "svelte.config.*": "*.env, .babelrc*, .codecov, .cssnanorc*, .env.*, .envrc, .htmlnanorc*, .lighthouserc.*, .mocha*, .postcssrc*, .terserrc*, api-extractor.json, ava.config.*, babel.config.*, capacitor.config.*, contentlayer.config.*, cssnano.config.*, cypress.*, env.d.ts, formkit.config.*, formulate.config.*, histoire.config.*, houdini.config.*, htmlnanorc.*, i18n.config.*, ionic.config.*, jasmine.*, jest.config.*, jsconfig.*, karma*, lighthouserc.*, mdsvex.config.js, panda.config.*, playwright.config.*, postcss.config.*, puppeteer.config.*, rspack.config.*, sst.config.*, svgo.config.*, tailwind.config.*, tsconfig.*, tsdoc.*, uno.config.*, unocss.config.*, vite.config.*, vitest.config.*, vuetify.config.*, webpack.config.*, windi.config.*",
-    "vite.config.*": "*.env, .babelrc*, .codecov, .cssnanorc*, .env.*, .envrc, .htmlnanorc*, .lighthouserc.*, .mocha*, .postcssrc*, .terserrc*, api-extractor.json, ava.config.*, babel.config.*, capacitor.config.*, contentlayer.config.*, cssnano.config.*, cypress.*, env.d.ts, formkit.config.*, formulate.config.*, histoire.config.*, htmlnanorc.*, i18n.config.*, ionic.config.*, jasmine.*, jest.config.*, jsconfig.*, karma*, lighthouserc.*, panda.config.*, playwright.config.*, postcss.config.*, puppeteer.config.*, rspack.config.*, sst.config.*, svgo.config.*, tailwind.config.*, tsconfig.*, tsdoc.*, uno.config.*, unocss.config.*, vitest.config.*, vuetify.config.*, webpack.config.*, windi.config.*",
-    "vue.config.*": "*.env, .babelrc*, .codecov, .cssnanorc*, .env.*, .envrc, .htmlnanorc*, .lighthouserc.*, .mocha*, .postcssrc*, .terserrc*, api-extractor.json, ava.config.*, babel.config.*, capacitor.config.*, contentlayer.config.*, cssnano.config.*, cypress.*, env.d.ts, formkit.config.*, formulate.config.*, histoire.config.*, htmlnanorc.*, i18n.config.*, ionic.config.*, jasmine.*, jest.config.*, jsconfig.*, karma*, lighthouserc.*, panda.config.*, playwright.config.*, postcss.config.*, puppeteer.config.*, rspack.config.*, sst.config.*, svgo.config.*, tailwind.config.*, tsconfig.*, tsdoc.*, uno.config.*, unocss.config.*, vitest.config.*, vuetify.config.*, webpack.config.*, windi.config.*",
-    "*.asax": "$(capture).*.cs, $(capture).*.vb",
-    "*.ascx": "$(capture).*.cs, $(capture).*.vb",
-    "*.ashx": "$(capture).*.cs, $(capture).*.vb",
-    "*.aspx": "$(capture).*.cs, $(capture).*.vb",
-    "*.axaml": "$(capture).axaml.cs",
-    "*.bloc.dart": "$(capture).event.dart, $(capture).state.dart",
-    "*.c": "$(capture).h",
-    "*.cc": "$(capture).hpp, $(capture).h, $(capture).hxx, $(capture).hh",
-    "*.cjs": "$(capture).cjs.map, $(capture).*.cjs, $(capture)_*.cjs",
-    "*.component.ts": "$(capture).component.html, $(capture).component.spec.ts, $(capture).component.css, $(capture).component.scss, $(capture).component.sass, $(capture).component.less",
-    "*.cpp": "$(capture).hpp, $(capture).h, $(capture).hxx, $(capture).hh",
-    "*.cs": "$(capture).*.cs",
-    "*.cshtml": "$(capture).cshtml.cs",
-    "*.csproj": "*.config, *proj.user, appsettings.*, bundleconfig.json",
-    "*.css": "$(capture).css.map, $(capture).*.css",
-    "*.cxx": "$(capture).hpp, $(capture).h, $(capture).hxx, $(capture).hh",
-    "*.dart": "$(capture).freezed.dart, $(capture).g.dart",
-    "*.db": "*.db-shm, *.db-wal",
-    "*.ex": "$(capture).html.eex, $(capture).html.heex, $(capture).html.leex",
-    "*.fs": "$(capture).fs.js, $(capture).fs.js.map, $(capture).fs.jsx, $(capture).fs.ts, $(capture).fs.tsx, $(capture).fs.rs, $(capture).fs.php, $(capture).fs.dart",
-    "*.go": "$(capture)_test.go",
-    "*.java": "$(capture).class",
-    "*.js": "$(capture).js.map, $(capture).*.js, $(capture)_*.js",
-    "*.jsx": "$(capture).js, $(capture).*.jsx, $(capture)_*.js, $(capture)_*.jsx, $(capture).less, $(capture).module.less, $(capture).module.less.d.ts,  $(capture).scss, $(capture).module.scss, $(capture).module.scss.d.ts",
-    "*.master": "$(capture).*.cs, $(capture).*.vb",
-    "*.md": "$(capture).*",
-    "*.mjs": "$(capture).mjs.map, $(capture).*.mjs, $(capture)_*.mjs",
-    "*.module.ts": "$(capture).resolver.ts, $(capture).controller.ts, $(capture).service.ts",
-    "*.mts": "$(capture).mts.map, $(capture).*.mts, $(capture)_*.mts",
-    "*.pubxml": "$(capture).pubxml.user",
-    "*.py": "$(capture).pyi",
-    "*.razor": "$(capture).razor.cs, $(capture).razor.css, $(capture).razor.scss",
-    "*.resx": "$(capture).*.resx, $(capture).designer.cs, $(capture).designer.vb",
-    "*.tex": "$(capture).acn, $(capture).acr, $(capture).alg, $(capture).aux, $(capture).bbl, $(capture).blg, $(capture).fdb_latexmk, $(capture).fls, $(capture).glg, $(capture).glo, $(capture).gls, $(capture).idx, $(capture).ind, $(capture).ist, $(capture).lof, $(capture).log, $(capture).lot, $(capture).out, $(capture).pdf, $(capture).synctex.gz, $(capture).toc, $(capture).xdv",
-    "*.ts": "$(capture).js, $(capture).d.ts.map, $(capture).*.ts, $(capture)_*.js, $(capture)_*.ts",
-    "*.tsx": "$(capture).ts, $(capture).*.tsx, $(capture)_*.ts, $(capture)_*.tsx, $(capture).less, $(capture).module.less, $(capture).module.less.d.ts, $(capture).scss, $(capture).module.scss, $(capture).module.scss.d.ts, $(capture).css.ts",
-    "*.vbproj": "*.config, *proj.user, appsettings.*, bundleconfig.json",
-    "*.vue": "$(capture).*.ts, $(capture).*.js, $(capture).story.vue",
-    "*.w": "$(capture).*.w, I$(capture).w",
-    "*.xaml": "$(capture).xaml.cs"
-  },
-  "workbench.layoutControl.enabled": false,
-  "workbench.editor.labelFormat": "short",
-  "gitlens.views.repositories.showIncomingActivity": true,
-  "gitlens.views.workspaces.showIncomingActivity": true,
-  "settings.cycle": [
-    {
-      "id": "breadcrumbs",
-      "values": [
-        {
-          "breadcrumbs.enabled": false
-        },
-        {
-          "breadcrumbs.enabled": true
-        }
-      ]
-    },
-    {
-      "id": "lineNumbers",
-      "values": [
-        {
-          "editor.lineNumbers": "off",
-          "editor.folding": true
-        },
-        {
-          "editor.lineNumbers": "on",
-          "editor.folding": true
-        }
-      ]
-    },
-    {
-      "id": "indentation",
-      "values": [
-        {
-          "indenticator.showIndentGuide": false
-        },
-        {
-          "indenticator.showIndentGuide": true
-        }
-      ]
-    }
-  ],
-  "background.style": {
-    "background-position": "100% 100%",
-    "background-size": "auto",
-    "opacity": 0
-  },
-  "workbench.tips.enabled": false,
-  "git.mergeEditor": true,
-  "workbench.iconTheme": "symbols",
-  "errorLens.fontWeight": "300",
-  "git.alwaysShowStagedChangesResourceGroup": true,
-  "workbench.settings.applyToAllProfiles": ["workbench.colorCustomizations"],
-  "scm.providerCountBadge": "auto",
-  "scm.alwaysShowActions": true,
-  "scm.alwaysShowRepositories": true,
-  "scm.diffDecorations": "none",
-  "codemosModern.dark.auxiliaryUiTheme": null,
-  "codemosModern.dark.design": "modern",
-  "codemosModern.dark.accentColor": "#1c1e23",
-  "codemosModern.dark.adaptiveMode": "moderate",
-  "codemosModern.dark.auxiliaryCodeTheme": null,
-  "window.titleBarStyle": "custom",
-  "vscode_vibrancy.opacity": 0.4,
-  "explorer.autoReveal": true,
-  "git.confirmSync": false,
-  "workbench.sideBar.location": "right",
-  "workbench.editor.scrollToSwitchTabs": true,
-  "workbench.preferredDarkColorTheme": "Min Dark",
-  "workbench.statusBar.visible": false,
-  "workbench.activityBar.location": "hidden"
+    "focusBorder": "#00000000",
+    "statusBar.border": "#00000000",
+    "activityBar.activeBorder": "#00000000"
+  }
 }
