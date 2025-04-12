@@ -463,5 +463,47 @@
   {
     "key": "alt+1",
     "command": "-workbench.action.openEditorAtIndex1"
+  },
+  {
+    "key": "ctrl+alt+o",
+    "command": "workbench.action.files.openFolderViaWorkspace",
+    "when": "!openFolderWorkspaceSupport && workbenchState == 'workspace'"
+  },
+  {
+    "key": "ctrl+o",
+    "command": "-workbench.action.files.openFolderViaWorkspace",
+    "when": "!openFolderWorkspaceSupport && workbenchState == 'workspace'"
+  },
+  {
+    "key": "ctrl+o",
+    "command": "workbench.action.files.openFolder",
+    "when": "openFolderWorkspaceSupport"
+  },
+  {
+    "key": "ctrl+k ctrl+o",
+    "command": "-workbench.action.files.openFolder",
+    "when": "openFolderWorkspaceSupport"
+  },
+  {
+    "key": "ctrl+shift+u",
+    "command": "settings.cycle.breadcrumbs",
+    "when": "editorFocus"
+  },
+  {
+    "key": "ctrl+shift+alt+w",
+    "command": "workbench.action.closeOtherEditors"
+  },
+  {
+    "key": "ctrl+shift+u",
+    "command": "-workbench.action.output.toggleOutput",
+    "when": "workbench.panel.output.active"
+  },
+  {
+    "key": "ctrl+shift+9",
+    "command": "codepeek.generateContext"
+  },
+  {
+    "key": "ctrl+shift+e",
+    "command": "search-preview.quickOpenWithPreview"
   }
 ]
