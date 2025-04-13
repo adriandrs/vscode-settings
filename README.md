@@ -2,10 +2,10 @@
 
 Configuration for the best minimal setup in VS Code. Includes blur and rounded corners for a modern design.
 
-#### Theme: ![Mokka](https://marketplace.visualstudio.com/items/?itemName=Demenskiy.mokka)
+#### Theme: [Mokka](https://marketplace.visualstudio.com/items/?itemName=Demenskiy.mokka)
 ![Screenshot 2025-04-12 073458](https://github.com/user-attachments/assets/853f08a9-25c2-4eba-965e-092ecf1281c9)
 
-#### Theme: ![Tokyo Night Light](https://marketplace.visualstudio.com/items/?itemName=Demenskiy.mokka)
+#### Theme: [Tokyo Night Light](https://marketplace.visualstudio.com/items/?itemName=Demenskiy.mokka)
 ![image](https://github.com/user-attachments/assets/2d4ad519-6b11-4f6e-984a-7f6d3670aa74)
 
 
@@ -13,9 +13,9 @@ Configuration for the best minimal setup in VS Code. Includes blur and rounded c
 
 ### Extensions
 
-1. ![Custom UI Style](https://marketplace.visualstudio.com/items/?itemName=subframe7536.custom-ui-style)
-2. ![Apc Customize UI++](https://marketplace.visualstudio.com/items/?itemName=drcika.apc-extension) 
-3. ![Frosted Glass Theme](https://marketplace.visualstudio.com/items/?itemName=RichardLuo.frosted-glass-theme)
+1. [Custom UI Style](https://marketplace.visualstudio.com/items/?itemName=subframe7536.custom-ui-style)
+2. [Apc Customize UI++](https://marketplace.visualstudio.com/items/?itemName=drcika.apc-extension) 
+3. [Frosted Glass Theme](https://marketplace.visualstudio.com/items/?itemName=RichardLuo.frosted-glass-theme)
 
 ### Extra
 
