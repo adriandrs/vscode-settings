@@ -1,16 +1,19 @@
 /* ===== SIDEBAR STYLING ===== */
 
-/* Hide original "EXPLORER" text */
-.monaco-workbench .part.sidebar.left .composite.title h2 > span {
-    display: none !important;
-}
-
 /* Add left margin to sidebar title */
-.monaco-workbench .part.sidebar .composite.title h2 {
-    margin-left: 20px !important;
+.monaco-workbench .part.sidebar .composite.title {
+    /* display: flex !important; */
+    /* justify-content: center !important; */
+    /* width: 100% !important; */
+    margin-left: 25px !important; 
+    /* padding-left: 0 !important;  */
     color: var(--vscode-sideBar-foreground) !important;
 }
 
+/* Change color sidebar title */
+.monaco-workbench .part.sidebar .composite.title h2 {
+    color: var(--vscode-sideBar-foreground) !important;
+}
 /* Rounded corners for selected file in sidebar */
 .monaco-workbench .part.sidebar .monaco-list .monaco-list-row.selected {
     border-radius: 5px !important;
@@ -19,6 +22,7 @@
 /* Limit file list width in sidebar */
 .monaco-workbench .part.sidebar .monaco-list {
     width: 95% !important;
+    margin: auto !important;
     color: inherit !important;
 }
 
@@ -82,10 +86,10 @@
     backdrop-filter: blur(120px) saturate(180%) !important;
     border: 1px solid rgba(var(--vscode-focusBorder-rgb), 1) !important;
     border-radius: 12px !important;
-    transform: translate(-50%, -50%) !important; /* Cambiado */
+    transform: translate(-50%, -50%) !important; 
     top: 50% !important;
-    left: 50% !important; /* Añadido */
-    position: fixed !important; /* Asegurar que usa el viewport como referencia */
+    left: 50% !important; 
+    position: fixed !important;
 
 }
 
