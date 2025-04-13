@@ -19,7 +19,7 @@ Configuration for the best minimal setup in VS Code. Includes blur and rounded c
 
 ### Extra
 
-- The clock is a modular clock from Jaxcore (https://github.com/Jax-Core/JaxCore) 
+- The widget clock I use on empty desktop is a modular clock from Jaxcore (https://github.com/Jax-Core/JaxCore) 
 - It's needed to install rainmeter (https://github.com/rainmeter/rainmeter)
 
 ## Screnshots
