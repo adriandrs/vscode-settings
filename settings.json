@@ -195,7 +195,6 @@
   "workbench.tips.enabled": false,
   "workbench.list.smoothScrolling": true,
   "workbench.preferredLightColorTheme": "Tokyo Night Light",
-  "workbench.preferredDarkColorTheme": "Mokka",
   "workbench.editor.showTabs": "multiple",
   "workbench.editor.scrollToSwitchTabs": true,
   "workbench.tree.enableStickyScroll": false,
@@ -410,19 +409,45 @@
     ".monaco-workbench .pane-composite-part>.header-or-footer>.composite-bar-container>.composite-bar>.monaco-action-bar .action-item.checked .active-item-indicator:before, .monaco-workbench .pane-composite-part>.header-or-footer>.composite-bar-container>.composite-bar>.monaco-action-bar .action-item:focus .active-item-indicator:before, .monaco-workbench .pane-composite-part>.title>.composite-bar-container>.composite-bar>.monaco-action-bar .action-item.checked .active-item-indicator:before, .monaco-workbench .pane-composite-part>.title>.composite-bar-container>.composite-bar>.monaco-action-bar .action-item:focus .active-item-indicator:before": "border-top-width:1px !important;",
     ".terminal-wrapper.active": "background: transparent !important;",
     "div#terminal": "border-radius: .75rem !important; overflow: hidden !important;",
-    ".monaco-workbench .pane-body.integrated-terminal .terminal-split-pane": "border-radius: 0.5rem !important; overflow: hidden !important;"
+    ".monaco-workbench .pane-body.integrated-terminal .terminal-split-pane": "border-radius: 0.5rem !important; overflow: hidden !important;",
 
     // transparent hide close minimize windows vscode buttons
+    ".monaco-workbench": {
+      "&:not(.fullscreen)": {
+        // Allow dragging on the activity-bar, status-bar, tabs-container, side-bar title...
+        ".activitybar, .statusbar, .tabs-container, .sidebar .composite.title": {
+          "-webkit-app-region": "drag",
+
+          // ...but still allow to click actions and items without dragging.
+          ".content .monaco-action-bar, .statusbar-item, .tab, .title .title-actions .action-label": {
+            "-webkit-app-region": "no-drag"
+          }
+        }
+      }
+    }
   },
+
+  // hide titlebar
+  // "window.customTitleBarVisibility": "never",
+  // "window.titleBarStyle": "native",
+  // "custom-ui-style.electron": {
+  //   "frame": false,
+  //   // For MacOS
+  //   "roundedCorners": true
+  // },
+  // "workbench.activityBar.location": "hidden",
+  // "workbench.statusBar.visible": false,
+
+  //Color customizations
   "workbench.colorCustomizations": {
+    "[One Dark Pro Night Flat]": {
+      "editor.background": "#1c1f24",
+      "tab.activeBackground": "#1c1f24",
+      "sideBar.foreground": "#848f9fcd"
+    },
     "[One Dark Pro Darker]": {
-      "activityBar.background": "#1e2228",
-      "titleBar.activeBackground": "#1e2228",
-      "titleBar.inactiveBackground": "#1e2228",
-      "terminal.background": "#1e2228",
-      "panel.background": "#1e2228",
-      "sideBar.foreground": "#747e8d",
-      "tab.hoverBackground": "#262b3374"
+      "sideBar.background": "#21252b",
+      "editor.background": "#21252b"
     },
     "[One Dark Pro Mix]": {
       "terminal.background": "#21252b",
@@ -479,6 +504,7 @@
       "editorLineNumber.foreground": "#5c5c5c"
     },
     "[Min Dark]": {
+      "tab.activeForeground": "#d5d5d5",
       "editorLineNumber.foreground": "#5c5c5c",
       "terminal.background": "#1a1a1a",
       "terminal.foreground": "#C0C0C0",
@@ -727,6 +753,10 @@
       "statusBar.background": "#fafafa",
       "tab.hoverBackground": "#f0f0f0"
     },
+    "[Default Dark Modern]": {
+      "sideBar.foreground": "#9c9c9c",
+      "titleBar.inactiveBackground": "#181818"
+    },
     "activityBar.border": "#00000000",
     "tab.border": "#00000000",
     "panel.border": "#00000000",
@@ -749,6 +779,7 @@
     "titleBar.inactiveForeground": "#00000000",
     "titleBar.activeForeground": "#00000000"
   },
+  "workbench.activityBar.location": "hidden",
   "workbench.statusBar.visible": false,
-  "workbench.activityBar.location": "hidden"
+  "workbench.preferredDarkColorTheme": "Mokka"
 }
