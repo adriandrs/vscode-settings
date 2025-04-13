@@ -10,8 +10,17 @@ Modern design with rounded corners
 
 ![Screenshot 2025-04-12 073458](https://github.com/user-attachments/assets/853f08a9-25c2-4eba-965e-092ecf1281c9)
 
+Blur menus
+
 ![image](https://github.com/user-attachments/assets/afebbbd3-0039-4690-aaeb-90a9a7ead120)
 
+Bonus: Vim-like
+
+![image](https://github.com/user-attachments/assets/e88687bb-8c5a-498d-b967-a21ad29f3ed2)
+
+
+
+Past setups (oldsettings.json)
 
 <br/>
 
