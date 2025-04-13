@@ -82,8 +82,11 @@
     backdrop-filter: blur(120px) saturate(180%) !important;
     border: 1px solid rgba(var(--vscode-focusBorder-rgb), 1) !important;
     border-radius: 12px !important;
-    transform: translateY(-50%) !important;
+    transform: translate(-50%, -50%) !important; /* Cambiado */
     top: 50% !important;
+    left: 50% !important; /* Añadido */
+    position: fixed !important; /* Asegurar que usa el viewport como referencia */
+
 }
 
 /* Quick input list styling */
