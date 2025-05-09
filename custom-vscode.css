@@ -1,40 +1,62 @@
-/* ===== SIDEBAR STYLING ===== */
+/* ===== EDITOR ACTIONS BUTTON ===== */
+/* Hide default "more actions" button */
+.monaco-workbench .editor-group-container .editor-actions .codicon-more {
+    opacity: 0 !important;
+    pointer-events: none !important;
+    transition: opacity 0.2s ease;
+}
 
-/* Add left margin to sidebar title */
+/* Show button on editor hover */
+.monaco-workbench .editor-group-container:hover .editor-actions .codicon-more {
+    opacity: 1 !important;
+    pointer-events: all !important;
+}
+
+/* ===== SIDEBAR STYLING ===== */
+/* Sidebar title adjustments */
 .monaco-workbench .part.sidebar .composite.title {
-    /* display: flex !important; */
-    /* justify-content: center !important; */
-    /* width: 100% !important; */
-    margin-left: 25px !important; 
-    /* padding-left: 0 !important;  */
+    margin-left: 29px !important;
+    margin-bottom: 10px !important;
     color: var(--vscode-sideBar-foreground) !important;
 }
 
-/* Change color sidebar title */
+/* Sidebar content padding */
+.monaco-workbench .part.sidebar > .content {
+    padding-bottom: 60px !important;
+    box-sizing: border-box !important;
+}
+
+/* Sidebar title color */
 .monaco-workbench .part.sidebar .composite.title h2 {
     color: var(--vscode-sideBar-foreground) !important;
 }
-/* Rounded corners for selected file in sidebar */
-.monaco-workbench .part.sidebar .monaco-list .monaco-list-row.selected {
+
+/* Sidebar list items styling */
+.monaco-workbench .part.sidebar .monaco-list {
+    width: 90% !important;
+    margin: auto !important;
+}
+
+.monaco-workbench .part.sidebar .monaco-list .monaco-list-row.selected,
+.monaco-workbench .part.sidebar .monaco-list .monaco-list-row.selected.inactive,
+.monaco-workbench .part.sidebar .monaco-list .monaco-list-row.selected.focused,
+.monaco-workbench .part.sidebar .monaco-list .monaco-list-row:hover {
     border-radius: 5px !important;
 }
 
-/* Limit file list width in sidebar */
-.monaco-workbench .part.sidebar .monaco-list {
-    width: 95% !important;
-    margin: auto !important;
-    color: inherit !important;
+/* Icon label adjustments */
+.monaco-workbench .part.sidebar .monaco-list .monaco-icon-label {
+    margin-left: 0 !important;
+    padding-left: 0 !important;
 }
 
-/* File explorer action buttons */
+.monaco-workbench .part.sidebar .monaco-list .monaco-icon-label-container {
+    margin-left: 0px !important;
+}
+
+/* Hide sidebar action buttons */
 .monaco-workbench .part.sidebar .title-actions .actions-container {
     display: none;
-}
-
-/* Sidebar top shadow */
-.monaco-scrollable-element>.shadow.top {
-    box-shadow: 0px 0px 10px rgba(0,0,0,.75) !important;
-    top: -3px !important;
 }
 
 /* Expanded folder icon color */
@@ -42,27 +64,14 @@
     color: var(--vscode-sideBar-foreground) !important;
 }
 
-/* Selected item text color */
-.monaco-list.list_id_1 .monaco-list-row.selected .label-name {
-    color: #fff !important;
-    opacity: 1 !important;
-}
-
 /* ===== TITLEBAR STYLING ===== */
-
-/* Title bar text color */
-.monaco-workbench .part.titlebar {
-    color: var(--vscode-editor-foreground) !important;
-}
-
-/* Hide window control buttons (minimize, maximize, close) */
+/* Hide window control buttons */
 .monaco-workbench .part.titlebar > .titlebar-container > .titlebar-right {
     color: #00000000 !important;
 }
 
-/* Reorganize title bar container */
+/* Titlebar container layout */
 .monaco-workbench .part.titlebar > .titlebar-container {
-    height: 0px !important;
     display: flex !important;
     justify-content: space-between !important;
 }
@@ -73,69 +82,40 @@
     left: -999px !important;
 }
 
-/* ===== QUICK INPUT / COMMAND PALETTE ===== */
-
-/* Remove general blur effect */
+/* ===== QUICK INPUT ===== */
+/* Remove command palette blur effect */
 #command-blur {
     display: none !important;
 }
 
-/* Style quick input widget */
 .quick-input-widget {
     background: rgba(var(--vscode-editorWidget-background-rgb), 0.85) !important;
-    backdrop-filter: blur(120px) saturate(180%) !important;
+    backdrop-filter: blur(60px) saturate(180%) !important;
     border: 1px solid rgba(var(--vscode-focusBorder-rgb), 1) !important;
     border-radius: 12px !important;
     transform: translate(-50%, -50%) !important; 
     top: 50% !important;
     left: 50% !important; 
     position: fixed !important;
+    padding: 10px !important;
+}
 
+.quick-input-widget .monaco-inputbox {
+    background: rgba(var(--vscode-editorWidget-background-rgb), 0.9) !important;
+    backdrop-filter: blur(100px) saturate(200%) !important;
+}
+
+.quick-input-widget .quick-input-box {
+    background: transparent !important;
 }
 
 /* Quick input list styling */
 .quick-input-list {
     background: transparent !important;
-}
-
-/* Quick input box styling */
-.quick-input-widget .monaco-inputbox {
-    background: rgba(var(--vscode-input-background-rgb), 0.7) !important;
-}
-
-/* ===== EDITOR STYLING ===== */
-
-/* Code canvas top shadow */
-.monaco-editor .scroll-decoration {
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, .75) !important;
-    top: -6px !important;
-}
-
-/* Current find match highlight */
-.currentFindMatchInline {
-    background: #000 !important;
-}
-
-/* ===== SCROLLBAR STYLING ===== */
-
-/* Hide scrollbar */
-.slider {
-    position: absolute !important;
-    right: 0px !important;
-    width: 0px !important;
-    left: auto !important;
+    padding: 10px 0px 10px 0px !important;
 }
 
 /* ===== SEARCH WIDGET ===== */
-
-/* Search label styling */
-.search-label {
-    font-family: 'Geist Mono' !important;
-    font-size: 14px !important;
-    color: #fff;
-    display: block;
-}
-
 /* Hide search icons */
 .search-icon, 
 .codicon-search::before,
@@ -145,7 +125,6 @@
 }
 
 /* ===== MISC ELEMENTS ===== */
-
 /* Remove hover resize borders */
 .monaco-resizable-hover {
     border: none !important;
